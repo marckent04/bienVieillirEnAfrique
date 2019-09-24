@@ -1,5 +1,11 @@
 @import 'config';
 
+
+.container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
 //general
 .color1 {
     color: $mainColor1;
@@ -9,6 +15,20 @@
     color: $mainColor2;
 }
 
+.megamenu .dropdown-menu {
+    background: none;
+    border: none;
+    width: 100%;
+    * {
+        color: black !important;
+    }
+}
+  
+.dropdown {
+    position: static;
+    
+  }
+
 .floatingBlue {
     display: inline-flex;
     justify-content: center;
@@ -17,6 +37,7 @@
     width: 30px;
     border-radius: 100%;
     background-color: $mainColor2 !important;
+
     i {
         color: white !important;
         font-size: 0.8em !important;
@@ -27,6 +48,7 @@
     font-weight: bold;
     text-transform: uppercase;
     background-color: $mainColor1;
+
     h5 {
         font-size: 1em;
         color: $mainColor2;
@@ -39,9 +61,8 @@
 
     a {
         background-color: $mainColor2;
-        i {
 
-        }
+        i {}
     }
 
 
@@ -53,6 +74,7 @@
         width: 30px;
         border-radius: 100%;
         background-color: $mainColor2 !important;
+
         i {
             color: white !important;
             font-size: 0.8em !important;
@@ -86,6 +108,7 @@
         width: 40px;
         border-radius: 100%;
         background-color: white !important;
+
         i {
             color: $mainColor2 !important;
             font-size: 1em !important;
@@ -93,7 +116,7 @@
     }
 }
 
-#news {  
+#news {
     // height: 500px;
     padding: 30px;
     @include backImg('../images/IMG-BVEA/img-3.png');
@@ -102,6 +125,7 @@
     .img {
         padding: 0;
         @include backImg('../images/IMG-BVEA/img-2.png');
+
         .card-body {
             @include degrade($mainColor1);
         }
@@ -116,6 +140,7 @@
 
     .text {
         padding-top: 22%;
+
         h2 {
             color: $mainColor1;
             text-transform: uppercase;
@@ -125,6 +150,7 @@
         p {
             font-size: 1.2em;
         }
+
         .btn {
             border-radius: 30px !important;
             padding: 20px 50px !important;
@@ -136,6 +162,7 @@
 #newsletter {
     padding: 50px;
     @include backImg('../images/IMG-BVEA/img-4.png');
+
     form {
         width: 100% !important;
     }
@@ -148,8 +175,8 @@
         width: 70%;
         border: 2px solid white;
         border-right: none;
-        border-top-left-radius: 30px; 
-        border-bottom-left-radius: 30px; 
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
     }
 
     input::placeholder {
@@ -157,12 +184,13 @@
         font-weight: bold;
         font-size: 1.5em;
     }
+
     button {
         // padding: 3%;
         height: 60px;
         width: 30%;
-        border-top-right-radius: 30px; 
-        border-bottom-right-radius: 30px; 
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
     }
 }
 
@@ -172,7 +200,7 @@
 
     .card {
         margin: 8px;
-        height: 400px;   
+        height: 400px;
     }
 
     .card-body {
@@ -181,6 +209,7 @@
         justify-content: end;
         @include degrade($mainColor1);
     }
+
     .action1 {
         @include backImg('../images/IMG-BVEA/img0.png');
     }
@@ -192,7 +221,7 @@
     .action3 {
         @include backImg('../images/IMG-BVEA/img0.png');
     }
-    
+
 }
 
 #team {
@@ -204,20 +233,23 @@
         width: 90%;
         border: 2px solid white;
         border-right: none;
-        border-top-right-radius: 30px; 
-        border-bottom-right-radius: 30px; 
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
     }
+
     input::placeholder {
         color: black;
         font-size: 1em;
     }
+
     .prepend {
         background: white;
         height: 60px;
         width: 10%;
         border: 1px solid white;
-        border-top-left-radius: 30px; 
-        border-bottom-left-radius: 30px; 
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+
         i {
             font-size: 2em;
             color: #6989a6;
@@ -228,10 +260,11 @@
 #forfaits {
     padding: 30px;
     background: white;
+
     .card {
         position: relative;
         margin: 8px;
-        height: 400px;   
+        height: 400px;
         padding: 0;
     }
 
@@ -272,6 +305,7 @@
 #payment {
     padding: 30px;
     background: #4d4d4d;
+
     form {
         width: 100% !important;
     }
@@ -289,8 +323,8 @@
         width: 30%;
         border: 2px solid white;
         border-right: none;
-        border-top-left-radius: 30px; 
-        border-bottom-left-radius: 30px; 
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
     }
 
     input::placeholder {
@@ -298,13 +332,14 @@
         font-weight: bold;
         font-size: 1.5em;
     }
+
     button {
         background: $mainColor1;
         border: 1px solid $mainColor1;
         height: 40px;
         width: 10%;
-        border-top-right-radius: 30px; 
-        border-bottom-right-radius: 30px; 
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
     }
 }
 
@@ -313,13 +348,16 @@ section {
 }
 
 header {
-    height: 800px;
-    @include backImg('../images/IMG-BVEA/heade-img.png');
+    .one {
+        @include backImg('../images/IMG-BVEA/heade-img.png');
+    }
+
     * {
         color: white !important;
         text-transform: uppercase;
         font-weight: bold;
     }
+
     .btn {
         font-weight: bold;
         border-radius: 20px !important;
@@ -330,13 +368,29 @@ header {
     .jumbotron {
         background: transparent !important;
         box-shadow: none;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    #bvcarousel {
+        z-index: -100 !important;
+    }
+
+    .carousel-item {
+        height: 800px;
+        width: 100%;
     }
 }
 
 nav {
-    position: relative;
+    position: fixed !important;
+    z-index: 1000;
+    width: 80%;
+    margin-left: 10%;
     box-shadow: none !important;
-    background: transparent !important;
+    background: transparent;
+
     .btn-outline {
         background: transparent !important;
     }
@@ -347,7 +401,6 @@ nav {
 
     #menuId {
         width: 75%;
-        // background: red;
         position: absolute;
         right: 0;
 
@@ -359,4 +412,3 @@ nav {
         }
     }
 }
-
