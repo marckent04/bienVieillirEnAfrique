@@ -1,31 +1,362 @@
-nav {
+@import 'config';
 
-    background: transparent !important;
+//general
+.color1 {
+    color: $mainColor1;
+}
+
+.color2 {
+    color: $mainColor2;
+}
+
+.floatingBlue {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: $mainColor2 !important;
+    i {
+        color: white !important;
+        font-size: 0.8em !important;
+    }
+}
+
+.yellowCard {
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: $mainColor1;
+    h5 {
+        font-size: 1em;
+        color: $mainColor2;
+    }
+
+    i {
+        color: white;
+        font-size: 2em;
+    }
+
+    a {
+        background-color: $mainColor2;
+        i {
+
+        }
+    }
+
+
+    .floating {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        background-color: $mainColor2 !important;
+        i {
+            color: white !important;
+            font-size: 0.8em !important;
+        }
+    }
+}
+
+.blueCard {
+    background: $mainColor2;
+
+    * {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    i {
+        color: $mainColor1;
+        font-size: 2em;
+    }
+
+    .floating {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        background-color: white !important;
+        i {
+            color: $mainColor2 !important;
+            font-size: 1em !important;
+        }
+    }
+}
+
+#news {  
+    // height: 500px;
+    padding: 30px;
+    @include backImg('../images/IMG-BVEA/img-3.png');
+    position: relative;
+
+    .img {
+        padding: 0;
+        @include backImg('../images/IMG-BVEA/img-2.png');
+        .card-body {
+            @include degrade($mainColor1);
+        }
+    }
+
+    .cards {
+        position: absolute;
+        width: 70%;
+        left: 15%;
+        top: -25%;
+    }
+
+    .text {
+        padding-top: 22%;
+        h2 {
+            color: $mainColor1;
+            text-transform: uppercase;
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+        .btn {
+            border-radius: 30px !important;
+            padding: 20px 50px !important;
+            color: $mainColor2;
+        }
+    }
+}
+
+#newsletter {
+    padding: 50px;
+    @include backImg('../images/IMG-BVEA/img-4.png');
+    form {
+        width: 100% !important;
+    }
+
+    input {
+        background: transparent;
+        color: white;
+        padding-left: 3%;
+        height: 60px;
+        width: 70%;
+        border: 2px solid white;
+        border-right: none;
+        border-top-left-radius: 30px; 
+        border-bottom-left-radius: 30px; 
+    }
+
+    input::placeholder {
+        color: white !important;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    button {
+        // padding: 3%;
+        height: 60px;
+        width: 30%;
+        border-top-right-radius: 30px; 
+        border-bottom-right-radius: 30px; 
+    }
+}
+
+#actions {
+    padding: 50px;
+    background: white;
+
+    .card {
+        margin: 8px;
+        height: 400px;   
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        @include degrade($mainColor1);
+    }
+    .action1 {
+        @include backImg('../images/IMG-BVEA/img0.png');
+    }
+
+    .action2 {
+        @include backImg('../images/IMG-BVEA/img0.png');
+    }
+
+    .action3 {
+        @include backImg('../images/IMG-BVEA/img0.png');
+    }
+    
+}
+
+#team {
+    padding: 40px;
+    @include backImg('../images/IMG-BVEA/Composant.png');
+
+    input {
+        height: 60px;
+        width: 90%;
+        border: 2px solid white;
+        border-right: none;
+        border-top-right-radius: 30px; 
+        border-bottom-right-radius: 30px; 
+    }
+    input::placeholder {
+        color: black;
+        font-size: 1em;
+    }
+    .prepend {
+        background: white;
+        height: 60px;
+        width: 10%;
+        border: 1px solid white;
+        border-top-left-radius: 30px; 
+        border-bottom-left-radius: 30px; 
+        i {
+            font-size: 2em;
+            color: #6989a6;
+        }
+    }
+}
+
+#forfaits {
+    padding: 30px;
+    background: white;
+    .card {
+        position: relative;
+        margin: 8px;
+        height: 400px;   
+        padding: 0;
+    }
+
+    .card-body {
+        @include degrade;
+        color: white;
+        font-weight: bolder;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        position: absolute;
+        top: 5%;
+        font-weight: bold;
+        border-radius: 50px !important;
+        padding: 15px 20px !important;
+        text-transform: uppercase;
+        background: $mainColor2;
+        color: white;
+    }
+
+    .action1 {
+        @include backImg('../images/IMG-BVEA/Groupe 48.png');
+    }
+
+    .action2 {
+        @include backImg('../images/IMG-BVEA/Groupe 50.png');
+    }
+
+    .action3 {
+        @include backImg('../images/IMG-BVEA/Groupe 48.png');
+    }
+}
+
+#payment {
+    padding: 30px;
+    background: #4d4d4d;
+    form {
+        width: 100% !important;
+    }
+
+    h4 {
+        margin: 0;
+        padding: 0;
+    }
+
+    input {
+        background: transparent;
+        color: white;
+        padding-left: 3%;
+        height: 40px;
+        width: 30%;
+        border: 2px solid white;
+        border-right: none;
+        border-top-left-radius: 30px; 
+        border-bottom-left-radius: 30px; 
+    }
+
+    input::placeholder {
+        color: white !important;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    button {
+        background: $mainColor1;
+        border: 1px solid $mainColor1;
+        height: 40px;
+        width: 10%;
+        border-top-right-radius: 30px; 
+        border-bottom-right-radius: 30px; 
+    }
+}
+
+section {
+    padding: 10px 0px;
+}
+
+header {
+    height: 800px;
+    @include backImg('../images/IMG-BVEA/heade-img.png');
     * {
         color: white !important;
         text-transform: uppercase;
         font-weight: bold;
     }
     .btn {
-        display: flex;
-        align-items: center;
+        font-weight: bold;
         border-radius: 20px !important;
         padding: 5px 20px !important;
         text-transform: uppercase;
     }
 
+    .jumbotron {
+        background: transparent !important;
+        box-shadow: none;
+    }
+}
+
+nav {
+    position: relative;
+    box-shadow: none !important;
+    background: transparent !important;
     .btn-outline {
         background: transparent !important;
     }
 
-    .navbar-nav {
-        background: red;
-        width: 70%;
+    .nav-link:hover {
+        background: gray;
+    }
+
+    #menuId {
+        width: 75%;
+        // background: red;
+        position: absolute;
+        right: 0;
+
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 }
 
-header {
-    height: 500px;
-    background-image: url('../images/tmpback.jpeg');
-    background-size: cover;
-}
