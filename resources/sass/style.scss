@@ -1,0 +1,31 @@
+nav {
+
+    background: transparent !important;
+    * {
+        color: white !important;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .btn {
+        display: flex;
+        align-items: center;
+        border-radius: 20px !important;
+        padding: 5px 20px !important;
+        text-transform: uppercase;
+    }
+
+    .btn-outline {
+        background: transparent !important;
+    }
+
+    .navbar-nav {
+        background: red;
+        width: 70%;
+    }
+}
+
+header {
+    height: 500px;
+    background-image: url('../images/tmpback.jpeg');
+    background-size: cover;
+}

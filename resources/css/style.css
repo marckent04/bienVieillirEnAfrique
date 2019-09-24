@@ -1,0 +1,34 @@
+/* line 1, ../sass/style.scss */
+nav {
+  background: transparent !important;
+}
+/* line 4, ../sass/style.scss */
+nav * {
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 9, ../sass/style.scss */
+nav .btn {
+  display: flex;
+  align-items: center;
+  border-radius: 20px !important;
+  padding: 5px 20px !important;
+  text-transform: uppercase;
+}
+/* line 17, ../sass/style.scss */
+nav .btn-outline {
+  background: transparent !important;
+}
+/* line 21, ../sass/style.scss */
+nav .navbar-nav {
+  background: red;
+  width: 70%;
+}
+
+/* line 27, ../sass/style.scss */
+header {
+  height: 500px;
+  background-image: url("../images/tmpback.jpeg");
+  background-size: cover;
+}
