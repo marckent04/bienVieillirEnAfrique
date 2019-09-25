@@ -5,164 +5,382 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="resources/fontawesome/css/all.css">
-  <link rel="stylesheet" href="resources/MDB/css/bootstrap.min.css">
-  <link rel="stylesheet" href="resources/MDB/css/mdb.min.css">
-  <link rel="stylesheet" href="resources/css/style.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="resources/css/style.css"> -->
   <title>Document</title>
-  <!-- <style>
-    .one {
-      display: flex;
-      align-items: center;
-      height: 700px;
-      background: url('resources/images/IMG-BVEA/heade-img.png');
-      background-size: cover;
+
+  <style>
+    .dropdown {
+      position: static;
     }
-
-    .jumbotron {
-      color: white;
-      background: transparent !important;
-      box-shadow: none !important;
-    }
-  </style> -->
-<style>
-.megamenu .dropdown-menu {
-  background: none;
-  border: none;
-  width: 100%;
-}
-
-.dropdown {
-  position: static;
-  
-}
-
-/*
-*
-* ==========================================
-* FOR DEMO PURPOSES
-* ==========================================
-*
-*/
-
-body {
-  background: #eaafc8;
-  background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
-  background: linear-gradient(to right, #eaafc8, #654ea3);
-  min-height: 100vh;
-}
-
-code {
-  color: #745eb1;
-  background: #fff;
-  padding: 0.1rem 0.2rem;
-  border-radius: 0.2rem;
-}
-
-.text-uppercase {
-  letter-spacing: 0.08em;
-}
-</style>
+  </style>
 </head>
 
 <body>
+ 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
-      <a href="#" class="navbar-brand font-weight-bold d-block d-lg-none">MegaMenu</a>
-      <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-      <div id="navbarContent" class="collapse navbar-collapse">
-        <ul class="navbar-nav mx-auto">
-          <!-- Megamenu-->
-          <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">Mega Menu</a>
-            <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
-              <div class="container">
-                <div class="row bg-white rounded-0 m-0 shadow-sm">
-                  <div class="col-lg-7 col-xl-8">
-                    <div class="p-4">
-                      <div class="row">
-                        <div class="col-lg-6 mb-4">
-                          <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
-                          <ul class="list-unstyled">
-                            <li class="nav-item"><a href="" class="nav-link text-small pb-0">Unique Features</a></li>
-                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
-                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
-                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                          <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
-                          <ul class="list-unstyled">
-                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
-                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
-                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
-                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                          <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
-                          <ul class="list-unstyled">
-                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
-                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
-                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
-                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                          <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
-                          <ul class="list-unstyled">
-                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
-                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
-                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
-                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: center center url(https://res.cloudinary.com/mhmd/image/upload/v1556990826/mega_bmtcdb.png)no-repeat; background-size: cover;"></div>
-                </div>
+<nav class="navbar navbar-expand-lg navbar-dark special-color-dark">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand text-uppercase" href="#">Navbar</a>
+  
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2"
+      aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+  
+        <!-- Features -->
+        <li class="nav-item dropdown mega-dropdown active">
+          <a class="nav-link dropdown-toggle text-uppercase" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Features
+            <span class="sr-only">(current)</span>
+          </a>
+          <div class="dropdown-menu mega-menu v-2 z-depth-1 special-color py-5 px-3"
+            aria-labelledby="navbarDropdownMenuLink2">
+            <div class="row">
+              <div class="col-md-6 col-xl-3 sub-menu mb-xl-0 mb-4">
+                <h6 class="sub-title text-uppercase font-weight-bold white-text">Featured</h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Lorem ipsum dolor sit amet
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Consectetur adipiscing elit
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Sed do eiusmod tempor incididunt
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Ut labore et dolore magna
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Ut enim ad minim veniam
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-xl-3 sub-menu mb-xl-0 mb-4">
+                <h6 class="sub-title text-uppercase font-weight-bold white-text">Related</h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Quis nostrud exercitation
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Duis aute irure dolor in
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Laboris nisi ut aliquip ex ea commodo consequat
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Reprehenderit in voluptate
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Esse cillum dolore eu fugiat nulla pariatur
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-xl-3 sub-menu mb-md-0 mb-xl-0 mb-4">
+                <h6 class="sub-title text-uppercase font-weight-bold white-text">Design</h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Excepteur sint occaecat
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Sunt in culpa qui officia
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Sed ut perspiciatis unde omnis iste natus error
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Mollit anim id est laborum
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Accusantium doloremque laudantium
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-xl-3 sub-menu mb-0">
+                <h6 class="sub-title text-uppercase font-weight-bold white-text">Programming</h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Totam rem aperiam eaque
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Beatae vitae dicta sun
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Quae ab illo inventore veritatis et quasi
+                      architecto
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Nemo enim ipsam voluptatem
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Neque porro quisquam est
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
-          </li>
-          <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">About</a></li>
-          <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">Services</a></li>
-          <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    
-    
-    <!-- For demo purpose -->
-    <section class="py-5 text-white">
-      <div class="container py-4">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h1 class="display-4">Bootstrap 4 megamenu</h1>
-            <p class="lead mb-0">A very simple way to create Bootstrap 4 megamneu. </p>
-            <p class="lead">Snippet by <a href="https://bootstrapious.com/snippets" class='text-white'><u>Bootstrapious</u></a>. </p>
           </div>
-        </div>
-        <div class="row pt-5">
-          <div class="col-lg-10 mx-auto">
-            <p class="lead">Use the default Bootstrap's dropdown menu to hold your megamneu.</p>
-            <p class="lead">Set the <code>.dropdown</code> position to <code>static</code> instead of <code>absolute</code>.</p>
-            <p class="lead">We use the class <code>.megamenu</code> to hold this <code>static</code> position.</p>
+        </li>
+        <!-- Technology -->
+        <li class="nav-item dropdown mega-dropdown">
+          <a class="nav-link dropdown-toggle text-uppercase" id="navbarDropdownMenuLink3" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Technology</a>
+          <div class="dropdown-menu mega-menu v-2 z-depth-1 special-color py-5 px-3"
+            aria-labelledby="navbarDropdownMenuLink3">
+            <div class="row">
+              <div class="col-md-12 col-xl-4 sub-menu mb-xl-0 mb-4">
+                <h6 class="sub-title text-uppercase font-weight-bold white-text">Featured</h6>
+                <!--Featured image-->
+                <a href="#!" class="view overlay z-depth-1 p-0 mb-2">
+                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/8-col/img%20(37).jpg"
+                    class="img-fluid" alt="First sample image">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+                <a class="news-title font-weight-bold pl-0" href="#!">Lorem ipsum dolor sit</a>
+                <p class="font-small text-uppercase white-text">
+                  <i class="fas fa-clock-o pr-2" aria-hidden="true"></i>July 17, 2017 / <i
+                    class="far fa-comments px-1" aria-hidden="true"></i> 20
+                </p>
+              </div>
+              <div class="col-md-6 col-xl-4 sub-menu mb-md-0 mb-4">
+                <h6 class="sub-title text-uppercase font-weight-bold white-text">Related</h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Quis nostrud exercitation
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Duis aute irure dolor in
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Laboris nisi ut aliquip ex ea commodo consequat
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Reprehenderit in voluptate
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Esse cillum dolore eu fugiat nulla pariatur
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-xl-4 sub-menu mb-0">
+                <h6 class="sub-title text-uppercase font-weight-bold white-text">Design</h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Excepteur sint occaecat
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Sunt in culpa qui officia
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Sed ut perspiciatis unde omnis iste natus error
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Mollit anim id est laborum
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Accusantium doloremque laudantium
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+        </li>
+        <!-- Lifestyle -->
+        <li class="nav-item dropdown mega-dropdown">
+          <a class="nav-link dropdown-toggle text-uppercase" id="navbarDropdownMenuLink4" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Lifestyle</a>
+          <div class="dropdown-menu mega-menu v-2 z-depth-1 special-color py-5 px-3"
+            aria-labelledby="navbarDropdownMenuLink4">
+            <div class="row">
+              <div class="col-md-6 col-xl-3 sub-menu mb-4">
+                <h6 class="sub-title text-uppercase font-weight-bold white-text">Featured</h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Lorem ipsum dolor sit amet
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Consectetur adipiscing elit
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Sed do eiusmod tempor incididunt
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Ut labore et dolore magna
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Ut enim ad minim veniam
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-xl-3 sub-menu mb-4 mb-xl-0">
+                <h6 class="sub-title text-uppercase font-weight-bold white-text">Related</h6>
+                <!--Featured image-->
+                <a href="#!" class="view overlay z-depth-1 p-0 mb-2">
+                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(43).jpg"
+                    class="img-fluid" alt="First sample image">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+                <a class="news-title font-weight-bold pl-0" href="#!">Lorem ipsum dolor sit</a>
+                <p class="font-small text-uppercase white-text">
+                  <i class="fas fa-clock-o pr-2" aria-hidden="true"></i>July 17, 2017 / <i
+                    class="far fa-comments px-1" aria-hidden="true"></i> 20
+                </p>
+              </div>
+              <div class="col-md-6 col-xl-3 sub-menu mb-md-0 mb-xl-0 mb-4">
+                <h6 class="sub-title text-uppercase font-weight-bold white-text">Design</h6>
+                <!--Featured image-->
+                <a href="#!" class="view overlay z-depth-1 p-0 mb-2">
+                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(44).jpg"
+                    class="img-fluid" alt="First sample image">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+                <a class="news-title font-weight-bold pl-0" href="#!">Ut labore et dolore magna</a>
+                <p class="font-small text-uppercase white-text">
+                  <i class="fas fa-clock-o pr-2" aria-hidden="true"></i>July 16, 2017 / <i
+                    class="far fa-comments px-1" aria-hidden="true"></i> 25
+                </p>
+              </div>
+              <div class="col-md-6 col-xl-3 sub-menu mb-0">
+                <h6 class="sub-title text-uppercase font-weight-bold white-text">Programming</h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Totam rem aperiam eaque
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Beatae vitae dicta sun
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Quae ab illo inventore veritatis et quasi
+                      architecto
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Nemo enim ipsam voluptatem
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      <i class="fas fa-caret-right pl-1 pr-3"></i>Neque porro quisquam est
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+  
+      </ul>
+      <!-- Links -->
+  
+      <!-- Search form -->
+      <form class="form-inline">
+        <div class="md-form my-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
         </div>
-      </div>
-    </section>
-    <!-- End -->
+      </form>
+  
+    </div>
+    <!-- Collapsible content -->
+  
+  </nav>
   <!-- Navbar -->
-  <!--Carousel Wrapper-->
-
-  <!--Carousel Wrapper-->
-  <script src="resources/MDB/js/jquery-3.4.1.min.js"></script>
-  <script src="resources/MDB/js/bootstrap.min.js"></script>
-  <script src="resources/MDB/js/popper.min.js"></script>
-  <script src="resources/MDB/js/mdb.min.js"></script>
-  <script src="resources/js/script.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
 </body>
 
 </html>

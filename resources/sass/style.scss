@@ -11,6 +11,11 @@
     color: $mainColor1;
 }
 
+.v-divider {
+    height: 20px;
+    border-left: 1px solid white;
+}
+
 .color2 {
     color: $mainColor2;
 }
@@ -48,7 +53,6 @@
     font-weight: bold;
     text-transform: uppercase;
     background-color: $mainColor1;
-
     h5 {
         font-size: 1em;
         color: $mainColor2;
@@ -118,11 +122,12 @@
 
 #news {
     // height: 500px;
-    padding: 30px;
+    padding: $sectionPadding;
     @include backImg('../images/IMG-BVEA/img-3.png');
     position: relative;
 
     .img {
+        height: 400px;
         padding: 0;
         @include backImg('../images/IMG-BVEA/img-2.png');
 
@@ -160,7 +165,7 @@
 }
 
 #newsletter {
-    padding: 50px;
+    padding: $sectionPadding;
     @include backImg('../images/IMG-BVEA/img-4.png');
 
     form {
@@ -195,7 +200,7 @@
 }
 
 #actions {
-    padding: 50px;
+    padding: $sectionPadding;
     background: white;
 
     .card {
@@ -204,6 +209,7 @@
     }
 
     .card-body {
+        // background: red !important;
         display: flex;
         flex-direction: column;
         justify-content: end;
@@ -225,7 +231,7 @@
 }
 
 #team {
-    padding: 40px;
+    padding: $sectionPadding;
     @include backImg('../images/IMG-BVEA/Composant.png');
 
     input {
@@ -258,7 +264,7 @@
 }
 
 #forfaits {
-    padding: 30px;
+    padding: $sectionPadding;
     background: white;
 
     .card {
@@ -303,7 +309,8 @@
 }
 
 #payment {
-    padding: 30px;
+    $height: 70px;
+    padding: $sectionPadding;
     background: #4d4d4d;
 
     form {
@@ -319,8 +326,8 @@
         background: transparent;
         color: white;
         padding-left: 3%;
-        height: 40px;
-        width: 30%;
+        height: $height;
+        width: 40%;
         border: 2px solid white;
         border-right: none;
         border-top-left-radius: 30px;
@@ -336,24 +343,29 @@
     button {
         background: $mainColor1;
         border: 1px solid $mainColor1;
-        height: 40px;
-        width: 10%;
+        height: $height;
+        width: 20%;
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
     }
 }
 
-section {
-    padding: 10px 0px;
+.grayDivider {
+    border: 1px solid gray;
+    width: 50%;
 }
 
 header {
+    // z-index: -2;
+    height: 800px;
+    width: inherit !important;
+    position: relative;
     .one {
         @include backImg('../images/IMG-BVEA/heade-img.png');
     }
 
     * {
-        color: white !important;
+        color: white;
         text-transform: uppercase;
         font-weight: bold;
     }
@@ -374,29 +386,78 @@ header {
     }
 
     #bvcarousel {
-        z-index: -100 !important;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
 
     .carousel-item {
         height: 800px;
-        width: 100%;
     }
 }
 
 nav {
-    position: fixed !important;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+    .nav-item.item {
+      
+        .nav-link:not(.btn) {       
+            display: flex;
+            align-items: center;
+            height: inherit;
+        }
+        // background: red;
+        height: $logoSize;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    // background: red !important;
+    padding: 0;
+    margin-bottom: 0;
+    // z-index: 100 !important;
+    *:not(i) {
+        font-weight: normal !important;
+        font-size: 1.08em;
+    }
+
+    i {
+        font-size: 1.6em;
+    }
+
+    .navbar-brand {
+        img {
+            height: $logoSize;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        margin-left: 30px !important;
+    }
+
+    position: absolute;
+    top: 0;
     z-index: 1000;
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
     box-shadow: none !important;
     background: transparent;
+
+    #navbarContent {
+        height: $logoSize;
+        ul {
+            width: 90%;
+            display: flex;
+            justify-content: space-between
+        }
+    }
 
     .btn-outline {
         background: transparent !important;
     }
 
     .nav-link:hover {
-        background: gray;
+        background: rgb(214, 208, 208);
     }
 
     #menuId {
@@ -412,3 +473,51 @@ nav {
         }
     }
 }
+
+
+.bg-footer{
+    background-color: #faf6f6;
+}
+
+footer {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    .social-info a {
+        color: #252525;
+        font-size: 20px;
+        margin-right: 20px; }
+    .social-info a:last-child {
+          margin-right: 0; }
+        @media only screen and (max-width: 767px) {
+    .social-info a {
+            margin-right: 5px;
+            font-size: 12px; } }
+    .social-info a:hover, .footer-content .social-info a:focus {
+        color: #fc6060;
+    }
+
+    .blueBtn {
+        background: $mainColor2;
+        color: white;
+        border-radius: 60px;
+    }
+
+    .blueBtn:hover{
+        color: $mainColor2;
+        background: white;
+    }
+
+    .wBtn:hover {
+        background: $mainColor2;
+        color: white;
+    }
+
+    .wBtn{
+        color: $mainColor2;
+        background: white;
+        border-radius: 60px;
+    }
+    
+
+}
+

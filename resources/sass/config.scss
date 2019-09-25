@@ -1,6 +1,7 @@
 $mainColor1 : #ffe600;
 $mainColor2 : #003768;
-
+$sectionPadding: 80px;
+$logoSize : 100px;
 @mixin backImg($img) {
     background: url($img);
     background-size: cover;
@@ -9,5 +10,7 @@ $mainColor2 : #003768;
 @mixin degrade($color: black) {
     width: 100% !important;
      background: -moz-linear-gradient(bottom, $color, 40%, transparent);
+     background: -webkit-linear-gradient(bottom, $color, 40%, transparent);
+     background: linear-gradient(to top, $color, 40%, transparent);
 }
 

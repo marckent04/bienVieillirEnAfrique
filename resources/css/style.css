@@ -11,27 +11,33 @@
 }
 
 /* line 14, ../sass/style.scss */
+.v-divider {
+  height: 20px;
+  border-left: 1px solid white;
+}
+
+/* line 19, ../sass/style.scss */
 .color2 {
   color: #003768;
 }
 
-/* line 18, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 .megamenu .dropdown-menu {
   background: none;
   border: none;
   width: 100%;
 }
-/* line 22, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 .megamenu .dropdown-menu * {
   color: black !important;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 .dropdown {
   position: static;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .floatingBlue {
   display: inline-flex;
   justify-content: center;
@@ -41,33 +47,33 @@
   border-radius: 100%;
   background-color: #003768 !important;
 }
-/* line 41, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 .floatingBlue i {
   color: white !important;
   font-size: 0.8em !important;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 .yellowCard {
   font-weight: bold;
   text-transform: uppercase;
   background-color: #ffe600;
 }
-/* line 52, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .yellowCard h5 {
   font-size: 1em;
   color: #003768;
 }
-/* line 57, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 .yellowCard i {
   color: white;
   font-size: 2em;
 }
-/* line 62, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .yellowCard a {
   background-color: #003768;
 }
-/* line 69, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 .yellowCard .floating {
   display: inline-flex;
   justify-content: center;
@@ -77,32 +83,32 @@
   border-radius: 100%;
   background-color: #003768 !important;
 }
-/* line 78, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .yellowCard .floating i {
   color: white !important;
   font-size: 0.8em !important;
 }
 
-/* line 85, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 .blueCard {
   background: #003768;
 }
-/* line 88, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .blueCard * {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 94, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .blueCard h5 {
   font-size: 1em;
 }
-/* line 98, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .blueCard i {
   color: #ffe600;
   font-size: 2em;
 }
-/* line 103, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .blueCard .floating {
   display: inline-flex;
   justify-content: center;
@@ -112,69 +118,72 @@
   border-radius: 100%;
   background-color: white !important;
 }
-/* line 112, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .blueCard .floating i {
   color: #003768 !important;
   font-size: 1em !important;
 }
 
-/* line 119, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 #news {
-  padding: 30px;
+  padding: 80px;
   background: url("../images/IMG-BVEA/img-3.png");
   background-size: cover;
   position: relative;
 }
-/* line 125, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 #news .img {
+  height: 400px;
   padding: 0;
   background: url("../images/IMG-BVEA/img-2.png");
   background-size: cover;
 }
-/* line 129, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 #news .img .card-body {
   width: 100% !important;
   background: -moz-linear-gradient(bottom, #ffe600, 40%, transparent);
+  background: -webkit-linear-gradient(bottom, #ffe600, 40%, transparent);
+  background: linear-gradient(to top, #ffe600, 40%, transparent);
 }
-/* line 134, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 #news .cards {
   position: absolute;
   width: 70%;
   left: 15%;
   top: -25%;
 }
-/* line 141, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 #news .text {
   padding-top: 22%;
 }
-/* line 144, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 #news .text h2 {
   color: #ffe600;
   text-transform: uppercase;
   font-size: 2.5em;
 }
-/* line 150, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 #news .text p {
   font-size: 1.2em;
 }
-/* line 154, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 #news .text .btn {
   border-radius: 30px !important;
   padding: 20px 50px !important;
   color: #003768;
 }
 
-/* line 162, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 #newsletter {
-  padding: 50px;
+  padding: 80px;
   background: url("../images/IMG-BVEA/img-4.png");
   background-size: cover;
 }
-/* line 166, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 #newsletter form {
   width: 100% !important;
 }
-/* line 170, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 #newsletter input {
   background: transparent;
   color: white;
@@ -186,13 +195,13 @@
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
-/* line 182, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 #newsletter input::placeholder {
   color: white !important;
   font-weight: bold;
   font-size: 1.5em;
 }
-/* line 188, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 #newsletter button {
   height: 60px;
   width: 30%;
@@ -200,47 +209,49 @@
   border-bottom-right-radius: 30px;
 }
 
-/* line 197, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 #actions {
-  padding: 50px;
+  padding: 80px;
   background: white;
 }
-/* line 201, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 #actions .card {
   margin: 8px;
   height: 400px;
 }
-/* line 206, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 #actions .card-body {
   display: flex;
   flex-direction: column;
   justify-content: end;
   width: 100% !important;
   background: -moz-linear-gradient(bottom, #ffe600, 40%, transparent);
+  background: -webkit-linear-gradient(bottom, #ffe600, 40%, transparent);
+  background: linear-gradient(to top, #ffe600, 40%, transparent);
 }
-/* line 213, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 #actions .action1 {
   background: url("../images/IMG-BVEA/img0.png");
   background-size: cover;
 }
-/* line 217, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 #actions .action2 {
   background: url("../images/IMG-BVEA/img0.png");
   background-size: cover;
 }
-/* line 221, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 #actions .action3 {
   background: url("../images/IMG-BVEA/img0.png");
   background-size: cover;
 }
 
-/* line 227, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 #team {
-  padding: 40px;
+  padding: 80px;
   background: url("../images/IMG-BVEA/Composant.png");
   background-size: cover;
 }
-/* line 231, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 #team input {
   height: 60px;
   width: 90%;
@@ -249,12 +260,12 @@
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
-/* line 240, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 #team input::placeholder {
   color: black;
   font-size: 1em;
 }
-/* line 245, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 #team .prepend {
   background: white;
   height: 60px;
@@ -263,28 +274,30 @@
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
-/* line 253, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 #team .prepend i {
   font-size: 2em;
   color: #6989a6;
 }
 
-/* line 260, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 #forfaits {
-  padding: 30px;
+  padding: 80px;
   background: white;
 }
-/* line 264, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 #forfaits .card {
   position: relative;
   margin: 8px;
   height: 400px;
   padding: 0;
 }
-/* line 271, ../sass/style.scss */
+/* line 277, ../sass/style.scss */
 #forfaits .card-body {
   width: 100% !important;
   background: -moz-linear-gradient(bottom, black, 40%, transparent);
+  background: -webkit-linear-gradient(bottom, black, 40%, transparent);
+  background: linear-gradient(to top, black, 40%, transparent);
   color: white;
   font-weight: bolder;
   display: flex;
@@ -292,7 +305,7 @@
   justify-content: center;
   align-items: center;
 }
-/* line 281, ../sass/style.scss */
+/* line 287, ../sass/style.scss */
 #forfaits .btn {
   position: absolute;
   top: 5%;
@@ -303,88 +316,95 @@
   background: #003768;
   color: white;
 }
-/* line 292, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 #forfaits .action1 {
   background: url("../images/IMG-BVEA/Groupe 48.png");
   background-size: cover;
 }
-/* line 296, ../sass/style.scss */
+/* line 302, ../sass/style.scss */
 #forfaits .action2 {
   background: url("../images/IMG-BVEA/Groupe 50.png");
   background-size: cover;
 }
-/* line 300, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 #forfaits .action3 {
   background: url("../images/IMG-BVEA/Groupe 48.png");
   background-size: cover;
 }
 
-/* line 305, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 #payment {
-  padding: 30px;
+  padding: 80px;
   background: #4d4d4d;
 }
-/* line 309, ../sass/style.scss */
+/* line 316, ../sass/style.scss */
 #payment form {
   width: 100% !important;
 }
-/* line 313, ../sass/style.scss */
+/* line 320, ../sass/style.scss */
 #payment h4 {
   margin: 0;
   padding: 0;
 }
-/* line 318, ../sass/style.scss */
+/* line 325, ../sass/style.scss */
 #payment input {
   background: transparent;
   color: white;
   padding-left: 3%;
-  height: 40px;
-  width: 30%;
+  height: 70px;
+  width: 40%;
   border: 2px solid white;
   border-right: none;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
-/* line 330, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 #payment input::placeholder {
   color: white !important;
   font-weight: bold;
   font-size: 1.5em;
 }
-/* line 336, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 #payment button {
   background: #ffe600;
   border: 1px solid #ffe600;
-  height: 40px;
-  width: 10%;
+  height: 70px;
+  width: 20%;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
 
-/* line 346, ../sass/style.scss */
-section {
-  padding: 10px 0px;
+/* line 353, ../sass/style.scss */
+.grayDivider {
+  border: 1px solid gray;
+  width: 50%;
 }
 
-/* line 351, ../sass/style.scss */
+/* line 358, ../sass/style.scss */
+header {
+  height: 800px;
+  width: inherit !important;
+  position: relative;
+}
+/* line 363, ../sass/style.scss */
 header .one {
   background: url("../images/IMG-BVEA/heade-img.png");
   background-size: cover;
 }
-/* line 355, ../sass/style.scss */
+/* line 367, ../sass/style.scss */
 header * {
-  color: white !important;
+  color: white;
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 361, ../sass/style.scss */
+/* line 373, ../sass/style.scss */
 header .btn {
   font-weight: bold;
   border-radius: 20px !important;
   padding: 5px 20px !important;
   text-transform: uppercase;
 }
-/* line 368, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 header .jumbotron {
   background: transparent !important;
   box-shadow: none;
@@ -392,43 +412,146 @@ header .jumbotron {
   align-items: center;
   height: 100%;
 }
-/* line 376, ../sass/style.scss */
+/* line 388, ../sass/style.scss */
 header #bvcarousel {
-  z-index: -100 !important;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
-/* line 380, ../sass/style.scss */
+/* line 396, ../sass/style.scss */
 header .carousel-item {
   height: 800px;
-  width: 100%;
 }
 
-/* line 386, ../sass/style.scss */
+/* line 401, ../sass/style.scss */
 nav {
-  position: fixed !important;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+  padding: 0;
+  margin-bottom: 0;
+  position: absolute;
+  top: 0;
   z-index: 1000;
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
   box-shadow: none !important;
   background: transparent;
 }
-/* line 394, ../sass/style.scss */
+/* line 404, ../sass/style.scss */
+nav .nav-item.item {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 406, ../sass/style.scss */
+nav .nav-item.item .nav-link:not(.btn) {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+/* line 421, ../sass/style.scss */
+nav *:not(i) {
+  font-weight: normal !important;
+  font-size: 1.08em;
+}
+/* line 426, ../sass/style.scss */
+nav i {
+  font-size: 1.6em;
+}
+/* line 430, ../sass/style.scss */
+nav .navbar-brand {
+  margin-left: 30px !important;
+}
+/* line 431, ../sass/style.scss */
+nav .navbar-brand img {
+  height: 100px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+/* line 446, ../sass/style.scss */
+nav #navbarContent {
+  height: 100px;
+}
+/* line 448, ../sass/style.scss */
+nav #navbarContent ul {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 455, ../sass/style.scss */
 nav .btn-outline {
   background: transparent !important;
 }
-/* line 398, ../sass/style.scss */
+/* line 459, ../sass/style.scss */
 nav .nav-link:hover {
-  background: gray;
+  background: #d6d0d0;
 }
-/* line 402, ../sass/style.scss */
+/* line 463, ../sass/style.scss */
 nav #menuId {
   width: 75%;
   position: absolute;
   right: 0;
 }
-/* line 407, ../sass/style.scss */
+/* line 468, ../sass/style.scss */
 nav #menuId ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* line 478, ../sass/style.scss */
+.bg-footer {
+  background-color: #faf6f6;
+}
+
+/* line 482, ../sass/style.scss */
+footer {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+/* line 485, ../sass/style.scss */
+footer .social-info a {
+  color: #252525;
+  font-size: 20px;
+  margin-right: 20px;
+}
+/* line 489, ../sass/style.scss */
+footer .social-info a:last-child {
+  margin-right: 0;
+}
+@media only screen and (max-width: 767px) {
+  /* line 492, ../sass/style.scss */
+  footer .social-info a {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+}
+/* line 495, ../sass/style.scss */
+footer .social-info a:hover, footer .footer-content .social-info a:focus {
+  color: #fc6060;
+}
+/* line 499, ../sass/style.scss */
+footer .blueBtn {
+  background: #003768;
+  color: white;
+  border-radius: 60px;
+}
+/* line 505, ../sass/style.scss */
+footer .blueBtn:hover {
+  color: #003768;
+  background: white;
+}
+/* line 510, ../sass/style.scss */
+footer .wBtn:hover {
+  background: #003768;
+  color: white;
+}
+/* line 515, ../sass/style.scss */
+footer .wBtn {
+  color: #003768;
+  background: white;
+  border-radius: 60px;
 }
