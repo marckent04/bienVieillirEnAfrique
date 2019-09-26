@@ -6,6 +6,7 @@
     margin: 0 !important;
     width: 100% !important;
 }
+
 //general
 .color1 {
     color: $mainColor1;
@@ -20,19 +21,58 @@
     color: $mainColor2;
 }
 
-.megamenu .dropdown-menu {
-    background: none;
-    border: none;
-    width: 100%;
-    * {
-        color: black !important;
-    }
-}
-  
 .dropdown {
     position: static;
+}
+
+.dropdown:hover:not(.clickable) .dropdown-menu {
+    display: block;
+}
+
+
+.agisDrop {
+    .onglet1 {
+        height: 120px;
+        @include backImg('../images/IMG-BVEA/img-4.png');
+
+        div {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            p {
+                color: white !important;
+                text-decoration: underline;
+                font-size: 0.8em;
+            }
+            
+        }
+    }
+}
+
+.clickable {
+    ul {
+        list-style-type: none;
+    }
+}
+
+.dropdown-menu {
+
     
-  }
+    .onglet {
+        padding: 20px;
+        * {
+            color: black !important;
+        }
+    }
+    .more {
+        color: grey;
+        font-size: 0.9em;
+        text-transform: lowercase;
+    }
+    background: rgb(214, 208, 208) !important;
+    color: black !important;
+}
 
 .floatingBlue {
     display: inline-flex;
@@ -53,6 +93,7 @@
     font-weight: bold;
     text-transform: uppercase;
     background-color: $mainColor1;
+
     h5 {
         font-size: 1em;
         color: $mainColor2;
@@ -360,6 +401,7 @@ header {
     height: 800px;
     width: inherit !important;
     position: relative;
+
     .one {
         @include backImg('../images/IMG-BVEA/heade-img.png');
     }
@@ -385,7 +427,7 @@ header {
         height: 100%;
     }
 
-    #bvcarousel {
+    #bvcarousel, #imgPanel {
         width: 100%;
         position: absolute;
         top: 0;
@@ -393,31 +435,48 @@ header {
         z-index: -1;
     }
 
-    .carousel-item {
+    .carousel-item, .panelContent1 {
         height: 800px;
+    }
+    .panelContent1 {
+        .yellowDivider {
+            border: 1px solid $mainColor1;
+            width: 30%;
+        }
+        background: url('../images/IMG-BVEA/heade-img.png')
     }
 }
 
 nav {
-    padding-bottom: 0px !important;
+
+    .btnNavbar {
+        background: $mainColor1;
+    }
+    padding: 0px !important;
     margin-bottom: 0px !important;
+
+    .mega-menu {
+        padding: 20px !important;
+    }
+
+    .nav-link:not(.btn) {
+        height: 100% !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+    }
+
     .nav-item.item {
-      
-        .nav-link:not(.btn) {       
-            display: flex;
-            align-items: center;
-            height: inherit;
-        }
-        // background: red;
         height: $logoSize;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    // background: red !important;
-    padding: 0;
-    margin-bottom: 0;
-    // z-index: 100 !important;
+    .agis {
+        color: $mainColor1 !important;
+    }
+
     *:not(i) {
         font-weight: normal !important;
         font-size: 1.08em;
@@ -433,6 +492,7 @@ nav {
             padding-bottom: 0;
             margin-bottom: 0;
         }
+
         margin-left: 30px !important;
     }
 
@@ -445,18 +505,24 @@ nav {
 
     #navbarContent {
         height: $logoSize;
+
         ul {
             width: 90%;
             display: flex;
             justify-content: space-between
         }
+
+        .nav-item {
+            width: 16.66% !important;
+        }
+
     }
 
     .btn-outline {
         background: transparent !important;
     }
 
-    .nav-link:hover {
+    .nav-link:hover:not(.toClick) {
         background: rgb(214, 208, 208);
     }
 
@@ -475,24 +541,33 @@ nav {
 }
 
 
-.bg-footer{
+.bg-footer {
     background-color: #faf6f6;
 }
 
 footer {
     padding-top: 80px;
     padding-bottom: 50px;
+
     .social-info a {
         color: #252525;
         font-size: 20px;
-        margin-right: 20px; }
+        margin-right: 20px;
+    }
+
     .social-info a:last-child {
-          margin-right: 0; }
-        @media only screen and (max-width: 767px) {
-    .social-info a {
+        margin-right: 0;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .social-info a {
             margin-right: 5px;
-            font-size: 12px; } }
-    .social-info a:hover, .footer-content .social-info a:focus {
+            font-size: 12px;
+        }
+    }
+
+    .social-info a:hover,
+    .footer-content .social-info a:focus {
         color: #fc6060;
     }
 
@@ -502,7 +577,7 @@ footer {
         border-radius: 60px;
     }
 
-    .blueBtn:hover{
+    .blueBtn:hover {
         color: $mainColor2;
         background: white;
     }
@@ -512,12 +587,11 @@ footer {
         color: white;
     }
 
-    .wBtn{
+    .wBtn {
         color: $mainColor2;
         background: white;
         border-radius: 60px;
     }
-    
+
 
 }
-
