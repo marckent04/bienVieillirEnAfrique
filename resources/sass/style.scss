@@ -1,24 +1,279 @@
 @import 'config';
 
 
+
+
+//general
+
+header {
+    height: 800px;
+    width: inherit !important;
+    position: relative;
+
+    .one {
+        @include backImg('../images/IMG-BVEA/heade-img.png');
+    }
+
+    * {
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .btn {
+        font-weight: bold;
+        border-radius: 20px !important;
+        padding: 5px 20px !important;
+        text-transform: uppercase;
+    }
+
+    .jumbotron {
+        background: transparent !important;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    #bvcarousel,
+    #imgPanel {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .carousel-item,
+    .panelContent1 {
+        height: 800px;
+    }
+
+    .panelContent1 {
+        display: flex;
+        align-items: flex-end;
+        @include backImg('../images/IMG-BVEA/heade-img.png');
+        .yellowDivider {
+            border: 2px solid $mainColor1;
+            width: 25%;
+        }
+
+        .container {
+            margin-bottom: 100px;
+        }
+    }
+}
+
+
+.btnOutlineNavbar {
+    padding: 13px 23px !important;
+}
+.btnOutlineNavbar:hover {
+    background: $mainColor2 !important;
+    color: $mainColor1 !important;
+    border-color: $mainColor2 !important;
+}
+nav {
+    .btnNavbar {
+        padding: 15px 25px !important;
+        color: $mainColor2 !important;
+        background: $mainColor1;
+    }
+
+    .btnNavbar:hover {
+        background: $mainColor2 !important;
+        color: white !important;
+    }
+
+    padding: 0px !important;
+    margin-bottom: 0px !important;
+
+    .mega-menu {
+        padding: 20px !important;
+    }
+
+    .nav-link:not(.btn) {
+        height: 100% !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+    }
+
+    .nav-item.item {
+        height: $logoSize;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-item:hover {
+        color: black !important;
+    }
+
+    .agis {
+        color: $mainColor1 !important;
+    }
+
+    *:not(i) {
+        font-weight: normal !important;
+        font-size: 1.08em;
+    }
+
+    i {
+        font-size: 1.6em;
+    }
+
+    .navbar-brand {
+        img {
+            height: $logoSize;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        margin-left: 30px !important;
+    }
+
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: none !important;
+    background: transparent;
+
+    #navbarContent {
+        height: $logoSize;
+
+        ul {
+            width: 90%;
+            display: flex;
+            justify-content: space-between
+        }
+
+        .nav-item {
+            width: 16.66% !important;
+        }
+
+    }
+
+    .btn-outline {
+        background: transparent !important;
+    }
+
+    .nav-link:hover:not(.toClick) {
+        background: rgb(214, 208, 208);
+    }
+
+    #menuId {
+        width: 75%;
+        position: absolute;
+        right: 0;
+
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+footer {
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    .social-info a {
+        color: #252525;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    .social-info a:last-child {
+        margin-right: 0;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .social-info a {
+            margin-right: 5px;
+            font-size: 12px;
+        }
+    }
+
+    .social-info a:hover,
+    .footer-content .social-info a:focus {
+        color: #fc6060;
+    }
+
+    .blueBtn {
+        background: $mainColor2;
+        color: white;
+        border-radius: 60px;
+    }
+
+    .blueBtn:hover {
+        color: $mainColor2;
+        background: white;
+    }
+}
+
+
+.bolder {
+    font-weight: bolder !important;
+}
 .container-fluid {
     padding: 0 !important;
     margin: 0 !important;
     width: 100% !important;
 }
 
-//general
 .color1 {
     color: $mainColor1;
+}
+
+.color2 {
+    color: $mainColor2;
+}
+
+.back1 {
+    background: $mainColor1;
+}
+
+.back2 {
+    border-color: $mainColor2 !important;
+    background: $mainColor2 !important;
+    color: white !important;
+}
+
+.back2::placeholder {
+    color: white !important;
+}
+
+.btn-de {
+    color: #fff !important;
+    font-size: 16px;
+    border: 1px solid #fff;
+}
+
+.btn-de:hover {
+    background: #fff !important;
+    font-size: 16px;
+    color: $mainColor2 !important;
+}
+
+.wBtn:hover {
+    background: $mainColor2;
+    color: white;
+}
+
+.wBtn {
+    color: $mainColor2;
+    background: white;
+    border-radius: 60px;
 }
 
 .v-divider {
     height: 20px;
     border-left: 1px solid white;
-}
-
-.color2 {
-    color: $mainColor2;
 }
 
 .dropdown {
@@ -28,7 +283,6 @@
 .dropdown:hover:not(.clickable) .dropdown-menu {
     display: block;
 }
-
 
 .agisDrop {
     .onglet1 {
@@ -40,36 +294,43 @@
             display: flex;
             justify-content: center;
             align-items: end;
+
             p {
                 color: white !important;
                 text-decoration: underline;
                 font-size: 0.8em;
             }
-            
+
         }
     }
 }
 
-.clickable {
+div.clickable {
+    * {
+        color: black !important;
+    }
     ul {
         list-style-type: none;
-    }
+    } 
 }
 
 .dropdown-menu {
 
-    
+
     .onglet {
         padding: 20px;
+
         * {
             color: black !important;
         }
     }
+
     .more {
         color: grey;
         font-size: 0.9em;
         text-transform: lowercase;
     }
+
     background: rgb(214, 208, 208) !important;
     color: black !important;
 }
@@ -87,6 +348,14 @@
         color: white !important;
         font-size: 0.8em !important;
     }
+}
+
+.floatingBlue:hover{
+    border-radius: 100%;
+    * {
+        color: $mainColor2 !important;
+    }
+    background-color: #fff !important;
 }
 
 .yellowCard {
@@ -245,8 +514,30 @@
     background: white;
 
     .card {
-        margin: 8px;
-        height: 400px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .cards {
+        position: absolute;
+        z-index: 2;
+        width: 100% !important;
+        height: 100% !important;
+        background: -moz-linear-gradient(bottom, #ffe600, 5%, transparent);
+        background: -webkit-linear-gradient(bottom, #ffe600, 5%, transparent);
+        background: linear-gradient(to top, #ffe600, 5%, transparent);
+    }
+
+    .action .cards .content {
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-left: 20px;
+        padding-right: 5%;
+        font-weight: bolder;
+        color: #fff;
     }
 
     .card-body {
@@ -272,9 +563,14 @@
 }
 
 #team {
+
     padding: $sectionPadding;
     @include backImg('../images/IMG-BVEA/Composant.png');
 
+    .wBtn {
+        height: 60px;
+        width: 25%;
+    }
     input {
         height: 60px;
         width: 90%;
@@ -336,6 +632,12 @@
         color: white;
     }
 
+    .btn:hover {
+        text-transform: uppercase;
+        background: #fff;
+        color: $mainColor2;
+      }
+
     .action1 {
         @include backImg('../images/IMG-BVEA/Groupe 48.png');
     }
@@ -396,202 +698,215 @@
     width: 50%;
 }
 
-header {
-    // z-index: -2;
-    height: 800px;
-    width: inherit !important;
-    position: relative;
 
-    .one {
-        @include backImg('../images/IMG-BVEA/heade-img.png');
-    }
-
-    * {
-        color: white;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-
-    .btn {
-        font-weight: bold;
-        border-radius: 20px !important;
-        padding: 5px 20px !important;
-        text-transform: uppercase;
-    }
-
-    .jumbotron {
-        background: transparent !important;
-        box-shadow: none;
-        display: flex;
-        align-items: center;
-        height: 100%;
-    }
-
-    #bvcarousel, #imgPanel {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
-
-    .carousel-item, .panelContent1 {
-        height: 800px;
-    }
-    .panelContent1 {
-        .yellowDivider {
-            border: 1px solid $mainColor1;
-            width: 30%;
-        }
-        background: url('../images/IMG-BVEA/heade-img.png')
-    }
-}
-
-nav {
-
-    .btnNavbar {
-        background: $mainColor1;
-    }
-    padding: 0px !important;
-    margin-bottom: 0px !important;
-
-    .mega-menu {
-        padding: 20px !important;
-    }
-
-    .nav-link:not(.btn) {
-        height: 100% !important;
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        height: inherit;
-    }
-
-    .nav-item.item {
-        height: $logoSize;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .agis {
-        color: $mainColor1 !important;
-    }
-
-    *:not(i) {
-        font-weight: normal !important;
-        font-size: 1.08em;
-    }
-
-    i {
-        font-size: 1.6em;
-    }
-
-    .navbar-brand {
-        img {
-            height: $logoSize;
-            padding-bottom: 0;
-            margin-bottom: 0;
-        }
-
-        margin-left: 30px !important;
-    }
-
-    position: absolute;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    box-shadow: none !important;
-    background: transparent;
-
-    #navbarContent {
-        height: $logoSize;
-
-        ul {
-            width: 90%;
-            display: flex;
-            justify-content: space-between
-        }
-
-        .nav-item {
-            width: 16.66% !important;
-        }
-
-    }
-
-    .btn-outline {
-        background: transparent !important;
-    }
-
-    .nav-link:hover:not(.toClick) {
-        background: rgb(214, 208, 208);
-    }
-
-    #menuId {
-        width: 75%;
-        position: absolute;
-        right: 0;
-
-        ul {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-    }
-}
 
 
 .bg-footer {
     background-color: #faf6f6;
 }
 
-footer {
-    padding-top: 80px;
-    padding-bottom: 50px;
 
-    .social-info a {
-        color: #252525;
-        font-size: 20px;
-        margin-right: 20px;
+.mycard {
+    margin: 5%;
+    padding: 5%;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    ul {
+        h3 {
+            font-size: 1.05em;
+            font-weight: bolder;
+        }
+        font-size: 2.5em;
+        font-weight: bolder;
     }
 
-    .social-info a:last-child {
-        margin-right: 0;
+    .btn {
+        width: 50%;
+        border-radius: 60px;
+    }
+}
+
+
+//page Qui sommes-nous ?
+.textCard {
+    margin: auto 30px;
+   
+}
+
+.imgCard {
+    height: 300px;
+    width: 91%;
+    margin: auto 8%;
+    color: white;
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        padding: 4%;
+        @include degrade($mainColor2);
+    }
+}
+
+.c1 {
+    @include backImg('../images/IMG-BVEA/img-2.png');
+}
+
+.line {
+    margin-top: 60px;
+}
+
+
+#chiffres {
+    background: $mainColor2;
+}
+
+#axesAction {
+    padding-bottom: 500px;
+    .mycard {
+        height: 320px;
+        position: relative;
+        div {
+            @include myCardDegrade(rgb(95, 89, 89));
+        }
+        ul {
+            padding-left: 10% !important;
+        }
+
+        p {
+            font-size: 1em;
+        }
+        
+        *:not(.btn) {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .one {
+        @include backImg('../images/IMG-BVEA/Groupe 50.png')
+    }
+    .two {
+        @include backImg('../images/IMG-BVEA/img0.png')
+    }
+    .three {
+        @include backImg('../images/IMG-BVEA/Groupe 50.png')
+    }
+    .four {
+        @include backImg('../images/IMG-BVEA/img0.png')
     }
 
-    @media only screen and (max-width: 767px) {
-        .social-info a {
-            margin-right: 5px;
-            font-size: 12px;
+}
+
+
+#dates {
+    position: relative;
+    height: 200px;
+    background: rgb(226, 223, 223);
+    .wrapper {
+        width: 60%;
+        position: absolute;
+        left: 20%;
+        top: -260px;
+        .card {
+            position: relative;
+            height: 600px !important;
+            .raye {
+                display: flex;
+                justify-content: space-between;
+                .bande {
+                    opacity: 0.6;
+                    width: 9.6%;
+                    height: 100%;
+                }
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 90%;
+                height: 100%;
+                @include backImg('../images/IMG-BVEA/heade-img.png');
+            }
         }
     }
 
-    .social-info a:hover,
-    .footer-content .social-info a:focus {
-        color: #fc6060;
+}
+
+#organisation {
+    padding-top: 350px;
+    .mycard {
+        div {
+            @include myCardDegrade(rgb(73, 69, 69));            
+        }
+        p {
+            font-size: 1.1em;
+        }
+
+        .btn {
+            width: 80% !important;
+        }
+        height: 450px;
+        padding-bottom: 3% !important;
+        padding-left: 3% !important;
+        display: flex;
+        margin: 2%;
+        .btn {
+            width: 90%;
+        }
+    }
+    .one {
+        @include backImg('../images/IMG-BVEA/img0.png');
     }
 
-    .blueBtn {
-        background: $mainColor2;
-        color: white;
-        border-radius: 60px;
+    .two {
+        @include backImg('../images/IMG-BVEA/img-2.png');
     }
 
-    .blueBtn:hover {
-        color: $mainColor2;
-        background: white;
+    .three {
+        @include backImg('../images/IMG-BVEA/Groupe 48.png');
     }
 
-    .wBtn:hover {
-        background: $mainColor2;
-        color: white;
+    .international {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: flex-end;
+        .bCard {
+            position: relative;
+            width: 70%;
+            height: 600px;
+            @include backImg('../images/IMG-BVEA/heade-img.png');
+            .yellow {
+                padding: 5%;
+                position: absolute;
+                top: 50px;
+                left: -40%;
+                height: 500px;
+                width: 90%;
+            }
+
+            .button {
+                width: 40%;
+                border-radius: 40px;
+                border-color: $mainColor2 !important;
+                color: $mainColor2 !important;
+            }
+
+            .button:hover {
+                color: $mainColor1 !important;
+            }
+        }
+    }
+}
+
+#ressources {
+    background: #e6e6e6;
+    padding-bottom: 100px;
+    .line {
+        border-bottom: 1px solid black;
     }
 
-    .wBtn {
-        color: $mainColor2;
-        background: white;
-        border-radius: 60px;
-    }
+}
 
-
+section {
+    padding: 50px 50px;
 }
