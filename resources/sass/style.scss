@@ -910,3 +910,195 @@ div.clickable {
 section {
     padding: 50px 50px;
 }
+
+
+//OurActions
+.listenGray {
+    background: #4d4d4d;
+    * {
+        color: white !important;
+    }
+}
+
+.listenGray, .listenWhite {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+
+    .btn {
+        width: 50% !important;
+    }
+    
+}
+
+.listenGray {
+    .wBtn {
+        background: transparent !important;
+        border:1px solid white !important;
+    }
+
+    .wBtn:hover {
+        color: $mainColor1 !important;
+        background: $mainColor2 !important;
+        border-color: $mainColor2 !important;
+    }
+}
+
+
+//soutien
+
+.wB {
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 50px;
+    color: white;
+}
+
+#newsletter .btns {
+    .wB {
+        height: 50px;
+        width: 40%;
+    }
+
+    .wBtn {
+        height: 50px;
+        width: 25%;
+    }
+}
+
+.wB:hover {
+    color: $mainColor2;
+    background: white;
+    font-weight: bold;
+}
+
+.aidCard {
+    position: relative;
+    padding: 5%;
+    width: 80%;
+    height: 500px;
+    @include backImg('../images/IMG-BVEA/heade-img.png');
+    margin-top: 80px;
+    color: white;
+
+    .content {
+        padding-left: 2%;
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .whiteDivider {
+        width: 50%;
+        border: 0.5px solid gray;
+    }
+
+   
+
+
+    .aidMore.two {
+        height: 400px;
+    }
+
+
+    .aidMore {
+        position: absolute;
+        right:  -15%;
+        top: -40px;
+        height: 500px;
+        width: 42%;
+
+        .tHeight {
+            height: 100%;
+            
+        }
+
+        input {
+            padding-left: 8%;
+            background: transparent;
+            border: 1px solid white;    
+            height: 50px; 
+        }
+
+        input::placeholder {
+            color: white;
+        }
+        .inputLg {
+            border-radius: 25px;
+            width: 100%;
+        }
+
+        .miLg {
+            width: 70%;
+            border-top-left-radius: 25px; 
+            border-bottom-left-radius: 25px; 
+            border-right: none;
+        }
+
+        .afterInput {
+            padding-right: 8%;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 50px;
+            border: 1px solid white;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-left: none;
+        }
+        
+        .half {
+            padding: 6%;            
+            .row {
+                margin-left: 3%;
+                width: 94%;
+            }
+            height: 50%;
+        }
+
+        .yellowBtn {
+            margin-left: 10%;
+            background: $mainColor1;
+            border: 1px solid $mainColor1;
+            color: $mainColor2;
+            width: 80%;
+            border-radius: 25px;
+            width: 80%;
+            height: 35px;
+        }
+
+        .third {
+            padding: 6%;
+
+            height: 33%;
+        }
+
+        .tThirds {
+            padding: 6%;
+            height: 77%;
+        }
+    }
+
+    .choice {
+        cursor: pointer;
+        height: 40px; 
+        color: $mainColor2;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bgWhite {
+        background: white !important;
+    }
+}
+
+.trust {
+    width: 96%;
+    margin-left: 2%;
+    padding: 10px 10px 30px 10px;
+    background: rgb(247, 239, 239) !important;
+}

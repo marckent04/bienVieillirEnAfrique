@@ -1006,3 +1006,191 @@ div.clickable ul {
 section {
   padding: 50px 50px;
 }
+
+/* line 916, ../sass/style.scss */
+.listenGray {
+  background: #4d4d4d;
+}
+/* line 918, ../sass/style.scss */
+.listenGray * {
+  color: white !important;
+}
+
+/* line 923, ../sass/style.scss */
+.listenGray, .listenWhite {
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+/* line 927, ../sass/style.scss */
+.listenGray .btn, .listenWhite .btn {
+  width: 50% !important;
+}
+
+/* line 934, ../sass/style.scss */
+.listenGray .wBtn {
+  background: transparent !important;
+  border: 1px solid white !important;
+}
+/* line 939, ../sass/style.scss */
+.listenGray .wBtn:hover {
+  color: #ffe600 !important;
+  background: #003768 !important;
+  border-color: #003768 !important;
+}
+
+/* line 949, ../sass/style.scss */
+.wB {
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 10px 50px;
+  color: white;
+}
+
+/* line 957, ../sass/style.scss */
+#newsletter .btns .wB {
+  height: 50px;
+  width: 40%;
+}
+/* line 962, ../sass/style.scss */
+#newsletter .btns .wBtn {
+  height: 50px;
+  width: 25%;
+}
+
+/* line 968, ../sass/style.scss */
+.wB:hover {
+  color: #003768;
+  background: white;
+  font-weight: bold;
+}
+
+/* line 974, ../sass/style.scss */
+.aidCard {
+  position: relative;
+  padding: 5%;
+  width: 80%;
+  height: 500px;
+  background: url("../images/IMG-BVEA/heade-img.png");
+  background-size: cover;
+  margin-top: 80px;
+  color: white;
+}
+/* line 983, ../sass/style.scss */
+.aidCard .content {
+  padding-left: 2%;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* line 992, ../sass/style.scss */
+.aidCard .whiteDivider {
+  width: 50%;
+  border: 0.5px solid gray;
+}
+/* line 1000, ../sass/style.scss */
+.aidCard .aidMore.two {
+  height: 400px;
+}
+/* line 1005, ../sass/style.scss */
+.aidCard .aidMore {
+  position: absolute;
+  right: -15%;
+  top: -40px;
+  height: 500px;
+  width: 42%;
+}
+/* line 1012, ../sass/style.scss */
+.aidCard .aidMore .tHeight {
+  height: 100%;
+}
+/* line 1017, ../sass/style.scss */
+.aidCard .aidMore input {
+  padding-left: 8%;
+  background: transparent;
+  border: 1px solid white;
+  height: 50px;
+}
+/* line 1024, ../sass/style.scss */
+.aidCard .aidMore input::placeholder {
+  color: white;
+}
+/* line 1027, ../sass/style.scss */
+.aidCard .aidMore .inputLg {
+  border-radius: 25px;
+  width: 100%;
+}
+/* line 1032, ../sass/style.scss */
+.aidCard .aidMore .miLg {
+  width: 70%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-right: none;
+}
+/* line 1039, ../sass/style.scss */
+.aidCard .aidMore .afterInput {
+  padding-right: 8%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px;
+  border: 1px solid white;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-left: none;
+}
+/* line 1052, ../sass/style.scss */
+.aidCard .aidMore .half {
+  padding: 6%;
+  height: 50%;
+}
+/* line 1054, ../sass/style.scss */
+.aidCard .aidMore .half .row {
+  margin-left: 3%;
+  width: 94%;
+}
+/* line 1061, ../sass/style.scss */
+.aidCard .aidMore .yellowBtn {
+  margin-left: 10%;
+  background: #ffe600;
+  border: 1px solid #ffe600;
+  color: #003768;
+  width: 80%;
+  border-radius: 25px;
+  width: 80%;
+  height: 35px;
+}
+/* line 1072, ../sass/style.scss */
+.aidCard .aidMore .third {
+  padding: 6%;
+  height: 33%;
+}
+/* line 1078, ../sass/style.scss */
+.aidCard .aidMore .tThirds {
+  padding: 6%;
+  height: 77%;
+}
+/* line 1084, ../sass/style.scss */
+.aidCard .choice {
+  cursor: pointer;
+  height: 40px;
+  color: #003768;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 1094, ../sass/style.scss */
+.aidCard .bgWhite {
+  background: white !important;
+}
+
+/* line 1099, ../sass/style.scss */
+.trust {
+  width: 96%;
+  margin-left: 2%;
+  padding: 10px 10px 30px 10px;
+  background: #f7efef !important;
+}
