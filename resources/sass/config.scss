@@ -2,6 +2,16 @@ $mainColor1 : #ffe600;
 $mainColor2 : #003768;
 $sectionPadding: 80px;
 $logoSize : 72px;
+$fontSize: 18px;
+
+$fontSlideSize: 60px;
+
+$titre1: 2.5rem;
+
+
+$fontSize2: 1.2em;
+
+
 @mixin backImg($img) {
     background: url($img);
     background-size: cover;

@@ -1,7 +1,24 @@
 @import 'config';
 
+body {
+    font-size: $fontSize;
+}
 
+.textSize2 {
+    font-size: $fontSize2;
+}
 
+.titre1 {
+    font-size: $titre1;
+}
+
+p.titre1 {
+    line-height: 44px;
+}
+
+.fontSlide {
+    font-size: $fontSlideSize;
+}
 
 //general
 
@@ -10,6 +27,18 @@ header {
     width: inherit !important;
     position: relative;
 
+    .btnJumbotron {
+        padding: 10px 10px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 20%;
+        border-radius: 50% !important;
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 12px 23px !important;
+    }
     .one {
         @include backImg('../images/IMG-BVEA/heade-img.png');
     }
@@ -28,6 +57,9 @@ header {
     }
 
     .jumbotron {
+        *:not(a) {
+        font-size: $fontSlideSize;
+        }
         background: transparent !important;
         box-shadow: none;
         display: flex;
@@ -52,7 +84,7 @@ header {
     .panelContent1 {
         display: flex;
         align-items: flex-end;
-        @include backImg('../images/IMG-BVEA/heade-img.png');
+        // @include backImg('../images/IMG-BVEA/heade-img.png');
         .yellowDivider {
             border: 2px solid $mainColor1;
             width: 25%;
@@ -62,19 +94,57 @@ header {
             margin-bottom: 100px;
         }
     }
+
+    .panelContent1 {
+        .degrade {
+            position: absolute;
+            display: flex;
+            align-items: flex-end;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: -moz-linear-gradient(bottom, rgb(143, 138, 138), 15%, transparent, 90%, $mainColor1);
+            background: -webkit-linear-gradient(bottom, rgb(143, 138, 138), 15%, transparent, 90%, $mainColor1);
+            background: linear-gradient(to top, rgb(143, 138, 138), 15%, transparent, 90%, $mainColor1);
+        }
+    }
+
+    .whoArU {
+        @include backImg('../images/IMG-BVEA/Groupe 291.png');
+    }
+
+    .ourActions {
+        @include backImg('../images/IMG-BVEA/Groupe 151.png'); 
+    }
+
+    .aid {
+        @include backImg('../images/IMG-BVEA/Groupe 234.png');
+    }
 }
 
 
 .btnOutlineNavbar {
     padding: 13px 23px !important;
+
 }
+
 .btnOutlineNavbar:hover {
     background: $mainColor2 !important;
     color: $mainColor1 !important;
     border-color: $mainColor2 !important;
 }
 nav {
+    .btnOutlineNavbar {
+        border-radius: 60px !important;
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 12px 23px !important;
+    }
     .btnNavbar {
+        border-radius: 60px !important;
+        margin-top: 20px;
+        font-size: 18px;
         padding: 15px 25px !important;
         color: $mainColor2 !important;
         background: $mainColor1;
@@ -227,15 +297,15 @@ footer {
 }
 
 .color1 {
-    color: $mainColor1;
+    color: $mainColor1 !important;
 }
 
 .color2 {
-    color: $mainColor2;
+    color: $mainColor2 !important;
 }
 
 .back1 {
-    background: $mainColor1;
+    background: $mainColor1 !important;
 }
 
 .back2 {
@@ -647,7 +717,7 @@ div.clickable {
     }
 
     .action3 {
-        @include backImg('../images/IMG-BVEA/Groupe 48.png');
+        @include backImg('../images/IMG-BVEA/img10.png');
     }
 }
 
@@ -731,7 +801,18 @@ div.clickable {
 //page Qui sommes-nous ?
 .textCard {
     margin: auto 30px;
-   
+    p {
+        font-size: 1.2em;
+    }
+}
+
+#visions {
+    .c1 {
+        @include backImg('../images/IMG-BVEA/Groupe 317.png');
+    }
+    .c2 {
+        @include backImg('../images/IMG-BVEA/Groupe 321.png');
+    }
 }
 
 .imgCard {
@@ -759,6 +840,9 @@ div.clickable {
 
 
 #chiffres {
+    *:not(.titre1) {
+        color: white;
+    }
     background: $mainColor2;
 }
 
@@ -784,16 +868,16 @@ div.clickable {
         }
     }
     .one {
-        @include backImg('../images/IMG-BVEA/Groupe 50.png')
+        @include backImg('../images/IMG-BVEA/Groupe 348.png')
     }
     .two {
-        @include backImg('../images/IMG-BVEA/img0.png')
+        @include backImg('../images/IMG-BVEA/Groupe 349.png')
     }
     .three {
-        @include backImg('../images/IMG-BVEA/Groupe 50.png')
+        @include backImg('../images/IMG-BVEA/Groupe 348.png')
     }
     .four {
-        @include backImg('../images/IMG-BVEA/img0.png')
+        @include backImg('../images/IMG-BVEA/Groupe 349.png')
     }
 
 }
@@ -854,15 +938,15 @@ div.clickable {
         }
     }
     .one {
-        @include backImg('../images/IMG-BVEA/img0.png');
+        @include backImg('../images/IMG-BVEA/Groupe 331.png');
     }
 
     .two {
-        @include backImg('../images/IMG-BVEA/img-2.png');
+        @include backImg('../images/IMG-BVEA/Groupe 333.png');
     }
 
     .three {
-        @include backImg('../images/IMG-BVEA/Groupe 48.png');
+        @include backImg('../images/IMG-BVEA/Groupe 335.png');
     }
 
     .international {
@@ -875,6 +959,11 @@ div.clickable {
             width: 70%;
             height: 600px;
             @include backImg('../images/IMG-BVEA/heade-img.png');
+
+            p {
+                font-size: 1.2em;
+            }
+
             .yellow {
                 padding: 5%;
                 position: absolute;
@@ -895,6 +984,12 @@ div.clickable {
                 color: $mainColor1 !important;
             }
         }
+
+    }
+
+
+    .readMoreLink {
+        font-size: 1.4em;
     }
 }
 
@@ -913,9 +1008,21 @@ section {
 
 
 //OurActions
+
+#ourActions {
+    .c1 {
+        @include backImg('../images/IMG-BVEA/Groupe 163.png');
+    }
+    .c2 {
+        @include backImg('../images/IMG-BVEA/Groupe 167.png');
+    }
+    .c3 {
+        @include backImg('../images/IMG-BVEA/Groupe 173.png');
+    }
+}
 .listenGray {
     background: #4d4d4d;
-    * {
+    *:not(.color1) {
         color: white !important;
     }
 }
@@ -971,15 +1078,16 @@ section {
     font-weight: bold;
 }
 
+
 .aidCard {
+    
     position: relative;
     padding: 5%;
     width: 80%;
     height: 500px;
-    @include backImg('../images/IMG-BVEA/heade-img.png');
     margin-top: 80px;
     color: white;
-
+    
     .content {
         padding-left: 2%;
         height: 100%;
@@ -1096,9 +1204,35 @@ section {
     }
 }
 
+.aidCard.one {
+    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 260.png');
+}
+
+.aidCard.two {
+    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 270.png');
+}
+
+.aidCard.three {
+    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 265.png'); 
+}
+
+.aidCard.four {
+    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 279.png'); 
+
+}
+
+.aidCard.five { 
+    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 232.png'); 
+
+}
+
+.aidC1 {
+    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 246.png'); 
+}
+
 .trust {
     width: 96%;
     margin-left: 2%;
-    padding: 10px 10px 30px 10px;
+    padding: 10px 30px 30px 30px;
     background: rgb(247, 239, 239) !important;
 }
