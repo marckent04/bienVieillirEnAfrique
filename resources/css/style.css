@@ -1343,3 +1343,26 @@ section {
   padding: 10px 30px 30px 30px;
   background: #f7efef !important;
 }
+
+/* line 1241, ../sass/style.scss */
+.bottomHeader {
+  position: relative;
+  bottom: 60px;
+  background: rgba(43, 43, 43, 0.5);
+  height: 60px !important;
+}
+/* line 1246, ../sass/style.scss */
+.bottomHeader a {
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px !important;
+  color: white;
+}
+/* line 1255, ../sass/style.scss */
+.bottomHeader a:hover {
+  color: #ffe600;
+  font-weight: bold;
+  text-transform: uppercase;
+}

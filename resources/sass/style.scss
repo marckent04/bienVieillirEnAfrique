@@ -1051,7 +1051,7 @@ section {
 }
 
 
-//soutien
+//nous soutenir
 
 .wB {
     border: 1px solid white;
@@ -1235,4 +1235,26 @@ section {
     margin-left: 2%;
     padding: 10px 30px 30px 30px;
     background: rgb(247, 239, 239) !important;
+}
+
+
+.bottomHeader {
+    position: relative;
+    bottom: 60px;
+    background: rgba(43, 43, 43, 0.5);
+    height: 60px !important; 
+    a {
+        font-size: 1.1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px !important;
+        color: white;
+    }
+
+    a:hover {
+        color: $mainColor1;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 }
