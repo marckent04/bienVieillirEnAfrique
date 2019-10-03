@@ -17,11 +17,19 @@ $fontSize2: 1.2em;
     background-size: cover;
 }
 
-@mixin degrade($color: black) {
+@mixin degrade($color: black, $origin: bottom) {
     width: 100% !important;
-     background: -moz-linear-gradient(bottom, $color, 40%, transparent);
-     background: -webkit-linear-gradient(bottom, $color, 40%, transparent);
-     background: linear-gradient(to top, $color, 40%, transparent);
+
+    @if $origin == bottom {
+        background: -moz-linear-gradient(bottom, $color, 40%, transparent);
+        background: -webkit-linear-gradient(bottom, $color, 40%, transparent);
+        background: linear-gradient(to top, $color, 40%, transparent);
+    } @else {
+        background: -moz-linear-gradient(top, $color, 60%, transparent);
+        background: -webkit-linear-gradient(top, $color, 60%, transparent);
+        background: linear-gradient(to bottom, $color, 60%, transparent);
+    }
+     
 }
 
 

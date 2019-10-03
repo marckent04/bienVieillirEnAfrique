@@ -1,16 +1,17 @@
 $(document).ready(function () {
     const nav = $('nav').first()
 
-    const createDropdown = function (selector) { 
+    const createDropdown = function (selector) {
         $(selector).first().hover(function () {
             $(this).parent().css({
                 'backgroundColor': 'rgb(214, 208, 208)',
             })
         }, function () {
-            $(this).parent().css('backgroundColor', 'transparent')     
+            $(this).parent().css('backgroundColor', 'transparent')
         }
-    );
-     } 
+        );
+    }
+
 
     $(document).scroll(function () {
         if (($(this).scrollTop() > 0)) {
@@ -27,6 +28,35 @@ $(document).ready(function () {
     })
 
 
+    $('.toClick').hover(function (e) {
+        e.stopPropagation();
+    });
+    $('.toClick').click(function (e) {
+        e.preventDefault();
+        let icone = $(this).find('i').first();
+        let color = $(this).css('backgroundColor');
+        // console.log(color.toString());
+        if ($('div.clickable').css('display') == 'none') {
+            $(this).css('backgroundColor', 'rgb(214, 208, 208)')
+            icone.removeClass('fa-bars');
+            icone.addClass('fa-times');
+            // console.log($('div.clickable').css('display'));
+        }
+        else {
+            $(this).css('backgroundColor', 'rgba(0, 0, 0, 0)')
+            icone.addClass('fa-bars');
+            icone.removeClass('fa-times');
+            // console.log($('div.clickable').css('display'));
+
+        }
+        $('.clickable').first().on('hide.bs.dropdown', function (e) {
+            icone.addClass('fa-bars');
+            icone.removeClass('fa-times');
+            $('.toClick').css('backgroundColor', 'rgba(0, 0, 0, 0)')
+        })
+
+
+    });
     createDropdown('div.agisDrop')
 
     createDropdown('div.actionsDrop')

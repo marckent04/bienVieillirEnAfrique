@@ -4,6 +4,52 @@ body {
     font-size: $fontSize;
 }
 
+
+
+
+.blueBtn {
+    background: $mainColor2;
+    color: white;
+    border-radius: 60px;
+}
+
+.blueBtn:hover {
+    color: $mainColor2;
+    background: white;
+}
+
+.newsCard {
+    background: #f2f0f1;
+    margin-top: 40px;
+
+    .image {
+        height: 250px;
+        background-size: cover;
+    }
+
+    .text {
+        height: 300px;
+        padding: 16px;
+        // height: 50%;
+    }
+
+    a.read {
+        padding-top: 15px; 
+        padding-bottom: 15px; 
+        width: 80% !important;
+        color: $mainColor2 !important;
+        border-radius: 25px;
+        border: 1px solid $mainColor2 !important;
+    }
+
+}
+
+
+.reste {
+    position: relative;
+    z-index: 2;
+}
+
 .textSize2 {
     font-size: $fontSize2;
 }
@@ -22,8 +68,20 @@ p.titre1 {
 
 //general
 
-header {
+
+header:not(.withoutHeading) {
     height: 800px;
+}
+
+header.withoutHeading {
+
+   background: white;
+   * {
+    color: black !important;
+    }
+}
+
+header {
     width: inherit !important;
     position: relative;
 
@@ -39,6 +97,12 @@ header {
         font-size: 18px;
         padding: 12px 23px !important;
     }
+    .btnJumbotron:hover {
+        background: $mainColor2 !important; 
+        border-color: $mainColor2 !important;
+        color: $mainColor1 !important;
+    }
+
     .one {
         @include backImg('../images/IMG-BVEA/heade-img.png');
     }
@@ -73,7 +137,6 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -1;
     }
 
     .carousel-item,
@@ -93,9 +156,7 @@ header {
         .container {
             margin-bottom: 100px;
         }
-    }
 
-    .panelContent1 {
         .degrade {
             position: absolute;
             display: flex;
@@ -109,6 +170,8 @@ header {
             background: linear-gradient(to top, rgb(143, 138, 138), 15%, transparent, 90%, $mainColor1);
         }
     }
+
+
 
     .whoArU {
         @include backImg('../images/IMG-BVEA/Groupe 291.png');
@@ -125,7 +188,8 @@ header {
 
 
 .btnOutlineNavbar {
-    padding: 13px 23px !important;
+    padding: 13px 23px;
+    border-radius: 30px;
 
 }
 
@@ -134,7 +198,25 @@ header {
     color: $mainColor1 !important;
     border-color: $mainColor2 !important;
 }
+
 nav {
+    .nav-link:hover:not(.btn) {
+        color: black !important;
+    }
+    .all {
+        margin-right: 8%;
+        font-weight: bold;
+        .divider {
+            border: 1px solid black;
+            width: 80%;
+        }
+
+        a {
+            padding: 0 !important;
+            margin: 0 !important;
+            font-size: 1.5em;
+        }
+    }
     .btnOutlineNavbar {
         border-radius: 60px !important;
         margin-top: 20px;
@@ -159,7 +241,12 @@ nav {
     margin-bottom: 0px !important;
 
     .mega-menu {
+        background: rgb(214, 208, 208) !important;
+    }
+
+    .mega-menu:not(.clickable) {
         padding: 20px !important;
+
     }
 
     .nav-link:not(.btn) {
@@ -213,7 +300,7 @@ nav {
 
     #navbarContent {
         height: $logoSize;
-
+        // padding: 20px;
         ul {
             width: 90%;
             display: flex;
@@ -274,16 +361,7 @@ footer {
         color: #fc6060;
     }
 
-    .blueBtn {
-        background: $mainColor2;
-        color: white;
-        border-radius: 60px;
-    }
-
-    .blueBtn:hover {
-        color: $mainColor2;
-        background: white;
-    }
+    
 }
 
 
@@ -348,6 +426,11 @@ footer {
 
 .dropdown {
     position: static;
+
+    li {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 }
 
 .dropdown:hover:not(.clickable) .dropdown-menu {
@@ -376,19 +459,66 @@ footer {
 }
 
 div.clickable {
+    height: 280px;
+    padding: 0, 0, 40px, 0 !important;
+    margin: 0 !important;
     * {
         color: black !important;
     }
     ul {
         list-style-type: none;
     } 
+
+    position: relative;
+
+    .firstUl {
+        height: 275px;
+        background: white !important;
+        position: relative;
+        // height: 100%;
+        // display: inline;
+        // bottom: 26px;
+        right: 10px;
+        // top: 14px;
+        bottom: 26px;
+
+        & > ul {
+            position: relative;
+            // bottom: 50px;
+        }
+
+    }
+
+    .secondUl {
+        position: absolute;
+        // height: 100%;
+        right: 0px;
+        // background: rgb(214, 208, 208) !important;
+        top: 20px;
+        // padding-bottom : 60px !important; 
+
+        // width: 100%;
+    }
+
+   .secondUl a, .firstUl a {
+        text-transform: none !important;
+        margin-bottom: 6px !important;
+        padding: 0px !important;
+        font-size: 20px;
+    }
 }
 
 .dropdown-menu {
 
+    background: rgb(214, 208, 208);
+    color: black !important;
+
+    // &.clickable {
+    //     background: transparent !important;
+    // }
 
     .onglet {
-        padding: 20px;
+        // padding: 20px;
 
         * {
             color: black !important;
@@ -401,8 +531,7 @@ div.clickable {
         text-transform: lowercase;
     }
 
-    background: rgb(214, 208, 208) !important;
-    color: black !important;
+
 }
 
 .floatingBlue {
@@ -517,6 +646,7 @@ div.clickable {
     }
 
     .cards {
+        z-index: 2;
         position: absolute;
         width: 70%;
         left: 15%;
@@ -580,6 +710,7 @@ div.clickable {
 }
 
 #actions {
+    z-index: 2;
     padding: $sectionPadding;
     background: white;
 
@@ -590,7 +721,7 @@ div.clickable {
 
     .cards {
         position: absolute;
-        z-index: 2;
+        // z-index: 500 !important;
         width: 100% !important;
         height: 100% !important;
         background: -moz-linear-gradient(bottom, #ffe600, 5%, transparent);
@@ -768,9 +899,6 @@ div.clickable {
     width: 50%;
 }
 
-
-
-
 .bg-footer {
     background-color: #faf6f6;
 }
@@ -796,7 +924,6 @@ div.clickable {
         border-radius: 60px;
     }
 }
-
 
 //page Qui sommes-nous ?
 .textCard {
@@ -1256,5 +1383,162 @@ section {
         color: $mainColor1;
         font-weight: bold;
         text-transform: uppercase;
+    }
+}
+
+
+//one article
+
+
+#article {
+    * {
+        background-size: cover !important;
+    }
+
+    .articleImg {
+        height: 500px;
+        width: 100%;
+    }
+
+    .article {
+        padding: 15px;
+    }
+
+    .latest {
+        background: rgb(255, 243, 243);
+        width: 94%;
+        margin-left: 3%;
+        padding-bottom: 80px;
+        border-bottom-right-radius: 100px;
+        .title {
+            height: 50px;
+            width: 100%;
+            background: rgb(72, 163, 199);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        .more {
+            font-weight: 400;
+        }
+
+        .seeAllBtn {
+            border-radius: 25px;
+            width: 70%;
+        }
+    }
+
+    .divider {
+        border: 0.5px solid rgb(180, 178, 178);
+    }
+}
+
+
+// actualites
+
+#aLaUne {
+    padding: 100px 0px;
+    * {
+        background-size: cover !important;
+    }
+
+    .btnOutlineNavbar {
+        // padding: 13px 60px;
+        width: 40%;
+    }
+
+    .height {
+        height: 500px;
+    }
+    .aLaUne2, .aLaUne3 {
+        height: 240px;
+        width: 100%;
+    }
+
+    div[class^="aLaUne"] {
+        padding: 2% 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+.totalRadius {
+    border-radius: 60px !important;
+}
+
+input.totalRadius {
+    border: 2px solid white !important;
+    width: 80% !important;
+    padding-left: 4% !important;
+
+    &::placeholder {
+        font-size: 1.3em !important;
+    }
+}
+
+select#filtre {
+    // text-align: center;
+    height: 60px;
+    padding-left: 8%;
+    option {
+        text-align: center;
+    }
+    background: white;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+#temoignages {
+    background: $mainColor1;
+    .newsCard {
+        background: white;
+    }
+
+    h2:not(.titre1) {
+        font-size: 1.1em;
+    }
+
+    .blueBtn {
+        padding-top: 15px; 
+        padding-bottom: 15px; 
+        text-transform: uppercase;
+        width: 40%;
+    }
+} 
+
+#followUs {
+    background: white;
+
+    a {
+        background: $mainColor2;
+        height: 80px; 
+        width: 80px;
+        padding: 25px;
+        i {
+            font-size: 30px;
+            color: white;
+        }
+
+        &:hover {
+            background: white;
+            i {
+                color: $mainColor2;
+            }
+        }
+    }
+
+
+}
+
+#moreNews {
+    .guide {
+        a:hover {
+            font-weight: bold;
+        }
     }
 }
