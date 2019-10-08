@@ -40,7 +40,13 @@ body {
         color: $mainColor2 !important;
         border-radius: 25px;
         border: 1px solid $mainColor2 !important;
+
+        &:hover {
+            background: $mainColor2 !important;
+            color: white !important;
+        }
     }
+
 
 }
 
@@ -475,29 +481,23 @@ div.clickable {
         height: 275px;
         background: white !important;
         position: relative;
-        // height: 100%;
-        // display: inline;
-        // bottom: 26px;
         right: 10px;
-        // top: 14px;
         bottom: 26px;
 
         & > ul {
             position: relative;
-            // bottom: 50px;
         }
 
     }
 
     .secondUl {
         position: absolute;
-        // height: 100%;
+  
         right: 0px;
-        // background: rgb(214, 208, 208) !important;
         top: 20px;
-        // padding-bottom : 60px !important; 
 
-        // width: 100%;
+
+ 
     }
 
    .secondUl a, .firstUl a {
@@ -513,12 +513,7 @@ div.clickable {
     background: rgb(214, 208, 208);
     color: black !important;
 
-    // &.clickable {
-    //     background: transparent !important;
-    // }
-
     .onglet {
-        // padding: 20px;
 
         * {
             color: black !important;
@@ -574,8 +569,6 @@ div.clickable {
 
     a {
         background-color: $mainColor2;
-
-        i {}
     }
 
 
@@ -630,7 +623,6 @@ div.clickable {
 }
 
 #news {
-    // height: 500px;
     padding: $sectionPadding;
     @include backImg('../images/IMG-BVEA/img-3.png');
     position: relative;
@@ -701,7 +693,6 @@ div.clickable {
     }
 
     button {
-        // padding: 3%;
         height: 60px;
         width: 30%;
         border-top-right-radius: 30px;
@@ -721,7 +712,6 @@ div.clickable {
 
     .cards {
         position: absolute;
-        // z-index: 500 !important;
         width: 100% !important;
         height: 100% !important;
         background: -moz-linear-gradient(bottom, #ffe600, 5%, transparent);
@@ -742,7 +732,6 @@ div.clickable {
     }
 
     .card-body {
-        // background: red !important;
         display: flex;
         flex-direction: column;
         justify-content: end;
@@ -1138,13 +1127,29 @@ section {
 
 #ourActions {
     .c1 {
-        @include backImg('../images/IMG-BVEA/Groupe 163.png');
+        @include backImg('../images/IMG-BVEA/Groupe 317.png');
     }
     .c2 {
-        @include backImg('../images/IMG-BVEA/Groupe 167.png');
+        @include backImg('../images/IMG-BVEA/Groupe 17.png');
     }
     .c3 {
-        @include backImg('../images/IMG-BVEA/Groupe 173.png');
+        @include backImg('../images/IMG-BVEA/Groupe 26.png');
+    }
+
+    .aidCard.c4 {
+        @include backImg('../images/IMG-BVEA/Groupe 349.png');
+    }
+
+    .c5 {
+        @include backImg('../images/IMG-BVEA/Groupe 29.png');
+    }
+
+    .c6 {
+        @include backImg('../images/IMG-BVEA/Groupe 31.png');
+    }
+
+    .c7 {
+        @include backImg('../images/IMG-BVEA/Groupe 35.png');
     }
 }
 .listenGray {
@@ -1154,6 +1159,10 @@ section {
     }
 }
 
+.listenLightGrey {
+    background: #f2f2f2;
+}
+
 .listenGray, .listenWhite {
     padding-top: 100px !important;
     padding-bottom: 100px !important;
@@ -1161,7 +1170,7 @@ section {
     .btn {
         width: 50% !important;
     }
-    
+
 }
 
 .listenGray {
@@ -1523,9 +1532,9 @@ select#filtre {
             font-size: 30px;
             color: white;
         }
+        background: white;
 
         &:hover {
-            background: white;
             i {
                 color: $mainColor2;
             }
@@ -1541,4 +1550,45 @@ select#filtre {
             font-weight: bold;
         }
     }
+}
+
+
+#contactezNous {
+
+    .panelContent1 {
+
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    height: 1200px;
+    background: #F2F2F2;
+    // height: 500px;
+    position: relative;
+    input {
+        border-radius: 25px;
+    }
+
+    textarea {
+        border-radius: 5px;
+    }
+
+    .wrapper {
+        box-shadow: 0px 0px 1px gray;
+        padding: 5%;
+        background: white;
+        position: absolute;
+        left: 10%;
+        top: -5%;
+        width: 80% !important;
+
+    }
+}
+
+
+.contactUs {
+    align-items: center !important;
+    background-size: cover !important;
+    background: -moz-linear-gradient(bottom, rgb(143, 138, 138), 15%, transparent, 90%, $mainColor1), url('../images/IMG-BVEA/Groupe 31.png');
+    background: -webkit-linear-gradient(bottom, rgb(143, 138, 138), 15%, transparent, 90%, $mainColor1), url('../images/IMG-BVEA/Groupe 31.png');
+    background: linear-gradient(to top, rgb(143, 138, 138), 15%, transparent, 90%, $mainColor1), url('../images/IMG-BVEA/Groupe 31.png');
 }
