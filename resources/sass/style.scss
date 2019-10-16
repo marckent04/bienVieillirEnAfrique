@@ -4,18 +4,15 @@ body {
     font-size: $fontSize;
 }
 
-
-
-
 .blueBtn {
-    background: $mainColor2;
-    color: white;
+    background: $mainColor2 !important;
+    color: white !important;
     border-radius: 60px;
 }
 
 .blueBtn:hover {
-    color: $mainColor2;
-    background: white;
+    color: $mainColor2 !important;
+    background: white !important;
 }
 
 .newsCard {
@@ -34,8 +31,8 @@ body {
     }
 
     a.read {
-        padding-top: 15px; 
-        padding-bottom: 15px; 
+        padding-top: 15px;
+        padding-bottom: 15px;
         width: 80% !important;
         color: $mainColor2 !important;
         border-radius: 25px;
@@ -104,7 +101,7 @@ header {
         padding: 12px 23px !important;
     }
     .btnJumbotron:hover {
-        background: $mainColor2 !important; 
+        background: $mainColor2 !important;
         border-color: $mainColor2 !important;
         color: $mainColor1 !important;
     }
@@ -184,11 +181,19 @@ header {
     }
 
     .ourActions {
-        @include backImg('../images/IMG-BVEA/Groupe 151.png'); 
+        @include backImg('../images/IMG-BVEA/Groupe 151.png');
     }
 
     .aid {
         @include backImg('../images/IMG-BVEA/Groupe 234.png');
+    }
+
+    .implementation {
+        @include backImg('../images/IMG-BVEA/Groupe 1.png');
+    }
+
+    .testimony {
+        background: url('../images/IMG-BVEA/Groupe 18.png');
     }
 }
 
@@ -367,7 +372,7 @@ footer {
         color: #fc6060;
     }
 
-    
+
 }
 
 
@@ -473,7 +478,7 @@ div.clickable {
     }
     ul {
         list-style-type: none;
-    } 
+    }
 
     position: relative;
 
@@ -492,12 +497,12 @@ div.clickable {
 
     .secondUl {
         position: absolute;
-  
+
         right: 0px;
         top: 20px;
 
 
- 
+
     }
 
    .secondUl a, .firstUl a {
@@ -977,7 +982,7 @@ div.clickable {
         p {
             font-size: 1em;
         }
-        
+
         *:not(.btn) {
             margin: 0;
             padding: 0;
@@ -1031,11 +1036,52 @@ div.clickable {
 
 }
 
+.international {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: flex-end;
+    .bCard {
+        height: 690px;
+
+
+        position: relative;
+        width: 70%;
+        @include backImg('../images/IMG-BVEA/heade-img.png');
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .yellow {
+            padding: 5%;
+            position: absolute;
+            top: 50px;
+            left: -40%;
+            width: 90%;
+            height: 590px;
+
+        }
+
+        .button {
+            width: 40%;
+            border-radius: 40px;
+            border-color: $mainColor2 !important;
+            color: $mainColor2 !important;
+        }
+
+        .button:hover {
+            color: $mainColor1 !important;
+        }
+    }
+
+}
+
 #organisation {
     padding-top: 350px;
     .mycard {
         div {
-            @include myCardDegrade(rgb(73, 69, 69));            
+            @include myCardDegrade(rgb(73, 69, 69));
         }
         p {
             font-size: 1.1em;
@@ -1065,43 +1111,7 @@ div.clickable {
         @include backImg('../images/IMG-BVEA/Groupe 335.png');
     }
 
-    .international {
-        margin-top: 100px;
-        margin-bottom: 100px;
-        display: flex;
-        justify-content: flex-end;
-        .bCard {
-            position: relative;
-            width: 70%;
-            height: 600px;
-            @include backImg('../images/IMG-BVEA/heade-img.png');
 
-            p {
-                font-size: 1.2em;
-            }
-
-            .yellow {
-                padding: 5%;
-                position: absolute;
-                top: 50px;
-                left: -40%;
-                height: 500px;
-                width: 90%;
-            }
-
-            .button {
-                width: 40%;
-                border-radius: 40px;
-                border-color: $mainColor2 !important;
-                color: $mainColor2 !important;
-            }
-
-            .button:hover {
-                color: $mainColor1 !important;
-            }
-        }
-
-    }
 
 
     .readMoreLink {
@@ -1216,14 +1226,14 @@ section {
 
 
 .aidCard {
-    
+
     position: relative;
     padding: 5%;
     width: 80%;
     height: 500px;
     margin-top: 80px;
     color: white;
-    
+
     .content {
         padding-left: 2%;
         height: 100%;
@@ -1238,7 +1248,7 @@ section {
         border: 0.5px solid gray;
     }
 
-   
+
 
 
     .aidMore.two {
@@ -1255,14 +1265,14 @@ section {
 
         .tHeight {
             height: 100%;
-            
+
         }
 
         input {
             padding-left: 8%;
             background: transparent;
-            border: 1px solid white;    
-            height: 50px; 
+            border: 1px solid white;
+            height: 50px;
         }
 
         input::placeholder {
@@ -1275,8 +1285,8 @@ section {
 
         .miLg {
             width: 70%;
-            border-top-left-radius: 25px; 
-            border-bottom-left-radius: 25px; 
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
             border-right: none;
         }
 
@@ -1292,9 +1302,9 @@ section {
             border-bottom-right-radius: 25px;
             border-left: none;
         }
-        
+
         .half {
-            padding: 6%;            
+            padding: 6%;
             .row {
                 margin-left: 3%;
                 width: 94%;
@@ -1327,7 +1337,7 @@ section {
 
     .choice {
         cursor: pointer;
-        height: 40px; 
+        height: 40px;
         color: $mainColor2;
         font-weight: bolder;
         display: flex;
@@ -1349,21 +1359,21 @@ section {
 }
 
 .aidCard.three {
-    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 265.png'); 
+    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 265.png');
 }
 
 .aidCard.four {
-    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 279.png'); 
+    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 279.png');
 
 }
 
-.aidCard.five { 
-    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 232.png'); 
+.aidCard.five {
+    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 232.png');
 
 }
 
 .aidC1 {
-    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 246.png'); 
+    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 246.png');
 }
 
 .trust {
@@ -1378,7 +1388,7 @@ section {
     position: relative;
     bottom: 60px;
     background: rgba(43, 43, 43, 0.5);
-    height: 60px !important; 
+    height: 60px !important;
     a {
         font-size: 1.1em;
         display: flex;
@@ -1504,6 +1514,7 @@ select#filtre {
 
 #temoignages {
     background: $mainColor1;
+
     .newsCard {
         background: white;
     }
@@ -1513,19 +1524,19 @@ select#filtre {
     }
 
     .blueBtn {
-        padding-top: 15px; 
-        padding-bottom: 15px; 
+
+        padding-top: 15px;
+        padding-bottom: 15px;
         text-transform: uppercase;
         width: 40%;
     }
-} 
-
+}
 #followUs {
     background: white;
 
     a {
         background: $mainColor2;
-        height: 80px; 
+        height: 80px;
         width: 80px;
         padding: 25px;
         i {
@@ -1591,4 +1602,76 @@ select#filtre {
     background: -moz-linear-gradient(bottom, rgb(143, 138, 138), 15%, transparent, 90%, $mainColor1), url('../images/IMG-BVEA/Groupe 31.png');
     background: -webkit-linear-gradient(bottom, rgb(143, 138, 138), 15%, transparent, 90%, $mainColor1), url('../images/IMG-BVEA/Groupe 31.png');
     background: linear-gradient(to top, rgb(143, 138, 138), 15%, transparent, 90%, $mainColor1), url('../images/IMG-BVEA/Groupe 31.png');
+}
+
+
+#implementations {
+
+    .yellow {
+        height: 80% !important;
+        width: 70% !important;
+    }
+
+    .wB {
+        &:hover {
+            border-color: white;
+        }
+
+        border: 1px solid $mainColor2;
+        color: $mainColor2;
+    }
+
+
+
+    .trust {
+        background: #F2F2F2 !important;
+        .title {
+            font-size: 1.3em;
+        }
+    }
+
+    .trustGroup {
+        margin-top: 100px !important;
+
+        &:last-of-type {
+            margin-top: 200px !important;
+        }
+    }
+
+
+    .bCard {
+        background: url('../images/IMG-BVEA/Groupe 16.png');
+    }
+
+
+}
+
+#temoignage {
+    .aLaUne1 {
+        background: url('../images/IMG-BVEA/Groupe 18.png');
+    }
+
+    .aLaUne2 {
+        background: url('../images/IMG-BVEA/Groupe 20.png');
+    }
+
+    .aLaUne3 {
+        background: url('../images/IMG-BVEA/Groupe 22.png');
+    }
+}
+
+#events {
+    .event {
+        box-shadow: 0 0 5px gray;
+        padding: 1% 5% 1% 1%;
+        border: 1px solid transparent;
+        border-top-right-radius: 150px;
+        border-bottom-right-radius: 150px;
+        div {
+            height: 99%;
+        }
+        height: 200px;
+    }
+
+
 }

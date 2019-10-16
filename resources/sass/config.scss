@@ -11,6 +11,9 @@ $titre1: 2.5rem;
 
 $fontSize2: 1.2em;
 
+* {
+    background-size: cover !important;
+}
 
 @mixin backImg($img) {
     background: url($img);
