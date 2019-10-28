@@ -2,6 +2,11 @@
 
 body {
     font-size: $fontSize;
+    font-family: $fontFamily , sans-serif;;
+}
+
+.btn {
+    font-size: 0.9em !important;
 }
 
 .blueBtn {
@@ -87,14 +92,14 @@ header.withoutHeading {
 header {
     width: inherit !important;
     position: relative;
-
     .btnJumbotron {
         padding: 10px 10px !important;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 0.5em !important;
         height: 60px;
-        width: 20%;
+        width: 30%;
         border-radius: 50% !important;
         margin-top: 20px;
         font-size: 18px;
@@ -211,6 +216,10 @@ header {
 }
 
 nav {
+
+    * {
+        font-size: 1em !important;
+    }
     .nav-link:hover:not(.btn) {
         color: black !important;
     }
@@ -229,6 +238,7 @@ nav {
         }
     }
     .btnOutlineNavbar {
+        font-size: 0.7em !important;
         border-radius: 60px !important;
         margin-top: 20px;
         font-size: 18px;
@@ -470,7 +480,7 @@ footer {
 }
 
 div.clickable {
-    height: 280px;
+    height: 300px;
     padding: 0, 0, 40px, 0 !important;
     margin: 0 !important;
     * {
@@ -483,11 +493,12 @@ div.clickable {
     position: relative;
 
     .firstUl {
-        height: 275px;
+        height: 298px;
         background: white !important;
         position: relative;
         right: 10px;
         bottom: 26px;
+        font-size: 0.9em !important;
 
         & > ul {
             position: relative;
@@ -633,7 +644,7 @@ div.clickable {
     position: relative;
 
     .img {
-        height: 400px;
+        height: 470px;
         padding: 0;
         @include backImg('../images/IMG-BVEA/img-2.png');
 
@@ -651,7 +662,7 @@ div.clickable {
     }
 
     .text {
-        padding-top: 22%;
+        padding-top: 25%;
 
         h2 {
             color: $mainColor1;
@@ -683,7 +694,7 @@ div.clickable {
         background: transparent;
         color: white;
         padding-left: 3%;
-        height: 60px;
+        height: 80px;
         width: 70%;
         border: 2px solid white;
         border-right: none;
@@ -698,7 +709,7 @@ div.clickable {
     }
 
     button {
-        height: 60px;
+        height: 82px;
         width: 30%;
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
@@ -714,22 +725,18 @@ div.clickable {
         margin-bottom: 20px;
         margin-top: 20px;
     }
-
+    
     .cards {
-        position: absolute;
-        width: 100% !important;
-        height: 100% !important;
-        background: -moz-linear-gradient(bottom, #ffe600, 5%, transparent);
-        background: -webkit-linear-gradient(bottom, #ffe600, 5%, transparent);
-        background: linear-gradient(to top, #ffe600, 5%, transparent);
+        height: 500px;
+        display: flex;
+        align-items: flex-end;
+        background: -moz-linear-gradient(bottom, #ffe600, 5%, transparent),  url('../images/IMG-BVEA/img0.png'), ;
+        background: -webkit-linear-gradient(bottom, #ffe600, 5%, transparent),  url('../images/IMG-BVEA/img0.png'), ;
+        background: linear-gradient(to top, #ffe600, 5%, transparent),  url('../images/IMG-BVEA/img0.png');
+        padding-bottom: 30px;
     }
 
     .action .cards .content {
-        position: absolute;
-        top: 50%;
-        bottom: 0;
-        left: 0;
-        right: 0;
         padding-left: 20px;
         padding-right: 5%;
         font-weight: bolder;
@@ -767,7 +774,7 @@ div.clickable {
         width: 25%;
     }
     input {
-        height: 60px;
+        height: 90px;
         width: 90%;
         border: 2px solid white;
         border-right: none;
@@ -782,14 +789,14 @@ div.clickable {
 
     .prepend {
         background: white;
-        height: 60px;
+        height: 90px;
         width: 10%;
         border: 1px solid white;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
 
         i {
-            font-size: 2em;
+            font-size: 1.5em;
             color: #6989a6;
         }
     }
@@ -970,10 +977,16 @@ div.clickable {
 #axesAction {
     padding-bottom: 500px;
     .mycard {
-        height: 320px;
+        height: 500px;
+        width: 100%;
         position: relative;
         div {
             @include myCardDegrade(rgb(95, 89, 89));
+        }
+
+        h3 {
+            font-size: 0.8em;
+            margin-bottom: 30px !important; 	;
         }
         ul {
             padding-left: 10% !important;
@@ -981,6 +994,7 @@ div.clickable {
 
         p {
             font-size: 1em;
+            margin-bottom: 30px !important;
         }
 
         *:not(.btn) {
@@ -1042,11 +1056,9 @@ div.clickable {
     display: flex;
     justify-content: flex-end;
     .bCard {
-        height: 690px;
-
-
+        height: 800px;
         position: relative;
-        width: 70%;
+        width: 80%;
         @include backImg('../images/IMG-BVEA/heade-img.png');
 
         p {
@@ -1054,12 +1066,13 @@ div.clickable {
         }
 
         .yellow {
+            font-size: 0.8em;
             padding: 5%;
             position: absolute;
             top: 50px;
             left: -40%;
-            width: 90%;
-            height: 590px;
+            width: 80%;
+            height: 700px;
 
         }
 
@@ -1084,13 +1097,14 @@ div.clickable {
             @include myCardDegrade(rgb(73, 69, 69));
         }
         p {
+            margin-top: 10px;
             font-size: 1.1em;
         }
 
         .btn {
             width: 80% !important;
         }
-        height: 450px;
+        height: 490px;
         padding-bottom: 3% !important;
         padding-left: 3% !important;
         display: flex;
@@ -1230,7 +1244,7 @@ section {
     position: relative;
     padding: 5%;
     width: 80%;
-    height: 500px;
+    height: 770px;
     margin-top: 80px;
     color: white;
 
@@ -1260,8 +1274,8 @@ section {
         position: absolute;
         right:  -15%;
         top: -40px;
-        height: 500px;
-        width: 42%;
+        height: 700px;
+        width: 45%;
 
         .tHeight {
             height: 100%;
@@ -1273,6 +1287,7 @@ section {
             background: transparent;
             border: 1px solid white;
             height: 50px;
+            color: white;
         }
 
         input::placeholder {
@@ -1313,36 +1328,36 @@ section {
         }
 
         .yellowBtn {
-            margin-left: 10%;
+            margin-left: 7.5% !important;
             background: $mainColor1;
             border: 1px solid $mainColor1;
             color: $mainColor2;
             width: 80%;
             border-radius: 25px;
-            width: 80%;
-            height: 35px;
+            width: 85%;
+            height: 80px;
         }
 
         .third {
             padding: 6%;
-
-            height: 33%;
+            height: 34%;
         }
 
         .tThirds {
             padding: 6%;
-            height: 77%;
+            height: 76%;
         }
     }
 
     .choice {
         cursor: pointer;
-        height: 40px;
+        height: 50px;
         color: $mainColor2;
         font-weight: bolder;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 0.7em;
     }
 
     .bgWhite {
@@ -1466,7 +1481,8 @@ section {
 
     .btnOutlineNavbar {
         // padding: 13px 60px;
-        width: 40%;
+        width: 50%;
+
     }
 
     .height {
@@ -1641,6 +1657,7 @@ select#filtre {
 
 
     .bCard {
+
         background: url('../images/IMG-BVEA/Groupe 16.png');
     }
 
