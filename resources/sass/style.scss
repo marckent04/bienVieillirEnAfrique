@@ -218,8 +218,10 @@ header {
 nav {
 
     * {
-        font-size: 1em !important;
+        font-size: 0.85em !important;
     }
+
+
     .nav-link:hover:not(.btn) {
         color: black !important;
     }
@@ -238,17 +240,18 @@ nav {
         }
     }
     .btnOutlineNavbar {
-        font-size: 0.7em !important;
+        font-size: 0.75em !important;
         border-radius: 60px !important;
         margin-top: 20px;
-        font-size: 18px;
-        padding: 12px 23px !important;
+        padding: 15px !important;
+        width: 130px;
     }
     .btnNavbar {
         border-radius: 60px !important;
         margin-top: 20px;
-        font-size: 18px;
-        padding: 15px 25px !important;
+        padding: 15px !important;
+        width: 130px;
+
         color: $mainColor2 !important;
         background: $mainColor1;
     }
@@ -1693,3 +1696,33 @@ select#filtre {
 
 
 }
+
+
+
+//responsive 
+@media (min-width: 1200px) {
+    nav {
+        * {
+            font-size: 1em !important;
+        }
+
+        .btnOutlineNavbar {
+            width: 100%;
+            font-size: 0.7em !important;
+            border-radius: 60px !important;
+            margin-top: 20px;
+            font-size: 18px;
+            padding: 12px 23px !important;
+        }
+        .btnNavbar {
+            width: 100%;
+            border-radius: 60px !important;
+            margin-top: 20px !important;
+            font-size: 18px !important;
+            padding: 15px 25px !important;
+            color: $mainColor2 !important;
+            background: $mainColor1;
+        }
+
+    }
+ }
