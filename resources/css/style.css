@@ -242,8 +242,8 @@ nav {
   background: transparent;
 }
 /* line 220, ../sass/style.scss */
-nav * {
-  font-size: 0.85em !important;
+nav *:not(.dropdown) {
+  font-size: 0.9em !important;
 }
 /* line 225, ../sass/style.scss */
 nav .nav-link:hover:not(.btn) {
@@ -1795,7 +1795,7 @@ select#filtre option {
   height: 99%;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1366px) {
   /* line 1705, ../sass/style.scss */
   nav * {
     font-size: 1em !important;

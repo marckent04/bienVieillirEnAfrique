@@ -217,8 +217,8 @@ header {
 
 nav {
 
-    * {
-        font-size: 0.85em !important;
+    *:not(.dropdown) {
+        font-size: 0.9em !important;
     }
 
 
@@ -1700,7 +1700,7 @@ select#filtre {
 
 
 //responsive 
-@media (min-width: 1200px) {
+@media (min-width: 1366px) {
     nav {
         * {
             font-size: 1em !important;
